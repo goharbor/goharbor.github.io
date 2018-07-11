@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://goharbor.github.io/blogs/</loc>
+    <lastmod>2018-06-27T14:12:26+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goharbor.github.io/blogs/whats-next/</loc>
+    <lastmod>2018-06-27T14:12:26+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goharbor.github.io/community/</loc>
+    <lastmod>2018-06-27T11:46:41+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goharbor.github.io/docs/</loc>
+    <lastmod>2018-06-27T11:09:37+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goharbor.github.io/blogs/getting-started/</loc>
+    <lastmod>2018-06-26T14:12:26+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goharbor.github.io/blogs/welcome/</loc>
+    <lastmod>2018-06-25T14:12:26+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goharbor.github.io/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://goharbor.github.io/</loc>
+    <lastmod>2018-06-27T14:12:26+10:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://goharbor.github.io/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

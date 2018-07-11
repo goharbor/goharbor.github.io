@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<meta name="generator" content="Hugo 0.43" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>
+          Go Harbor
+          </title>
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="https://goharbor.github.io/img/favicon.png" />
+    <link rel="stylesheet" href="https://goharbor.github.io/css/bulma.min.css" />
+    <link rel="stylesheet" href="https://goharbor.github.io/css/icons.css" />
+    <link rel="stylesheet" href="https://goharbor.github.io/css/core.css" />
+
+  </head><body
+    
+      class='page-home'
+    
+  >
+
+    
+      
+    
+
+    
+
+  
+
+
+<div class="navbar-wrapper navbar-sticky">
+  <div class="hero-head">
+    <div class="container">
+      <nav class="navbar">
+        <div class="navbar-start">
+          <a class="navbar-item has-logo" href="https://goharbor.github.io">
+            <img class="brand" src="https://goharbor.github.io/img/logos/harbor-logo-white.svg" alt="Main navbar logo">
+          </a>
+          <span>
+          <a href=https://goharbor.github.io#getting-started class="get-started button rounded secondary-btn raised">
+            Get Started
+          </a>
+            </span>
+          <a id="panel-trigger" href="#left-panel" class="navbar-item navbar-inner hamburger-btn" href="javascript:void(0);">
+            <span class="menu-toggle">
+              <span class="icon-box-toggle">
+                <span class="rotate">
+                  <i class="icon-line-top"></i>
+                  <i class="icon-line-center"></i>
+                  <i class="icon-line-bottom"></i>
+                </span>
+              </span>
+            </span>
+          </a>
+        </div>
+        <span class="navbar-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+        <div class="navbar-end navbar-menu">
+              <a class="navbar-item is-tab navbar-inner" href="/community">
+                Community
+              </a>
+              <a class="navbar-item is-tab navbar-inner" href="/docs">
+                Docs
+              </a>
+              <a class="navbar-item is-tab navbar-inner" href="/blogs">
+                Blogs
+              </a><span class="navbar-item main-cta">
+            <a href=https://goharbor.github.io#getting-started class="get-started button cta is-large rounded secondary-btn raised">
+              Get Started
+            </a>
+          </span>
+
+        </div>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    
+    
+    <section class="hero is-fullheight is-default is-bold is-slanted">
+
+  <div class="hero-body curved-border bg-violet">
+    
+      <div class="hero-image">
+        <div class="wrap">
+          <div id="anim--lighthouse" class="bodymovin-animation" base-dir="lighthouse" base-file="data.json"></div>
+        </div>
+      </div>
+
+    
+  </div>
+  <div class="hero-content has-text-centered">
+    <div class="wrap">
+      <h1>Harbor</h1>
+      <h2>Manage and serve container images in a secure environment</h2>
+      <a href="/#getting-started" class="hbutton-violet button" target="_blank">
+        Get Started
+      </a>
+    </div>
+  </div>
+  
+    
+      
+        
+          
+          
+          
+            
+              
+            
+          
+          
+          
+          
+            
+              
+            
+          
+          
+          
+          
+            
+              
+            
+          
+          
+          
+          
+            
+              
+            
+          
+          
+          
+          
+            
+              
+            
+          
+          
+        
+      
+    
+  
+</section>
+<section class="module module--column what-is-harbor col-2">
+  <div class="container m-flex-reverse">
+    <div class="left col-item">
+      <h2 class="module-title">What is Harbor?</h2>
+      <div class="content">
+        <p>Harbor is an open source cloud native registry that stores, signs, and scans container images for vulnerabilities.</p>
+        <p>As a private on-premises registry, Harbor solves common
+        challenges by delivering trust, compliance, performance,
+        and interoperability. It fills a gap for organizations and
+        applications that cannot use a public or cloud-based
+        registry, or want a consistent experience across clouds.</p>
+
+        
+        <div class="gihub-embed">
+    <a class="github-button" href=https://github.com/vmware/harbor data-icon="octicon-star" data-show-count="true" aria-label="Star ntkme/github-buttons on GitHub">Star</a>
+    <a class="github-button" href=https://github.com/vmware/harbor/subscription data-icon="octicon-eye" data-show-count="true" aria-label="Watch ntkme/github-buttons on GitHub">Watch</a>
+    <a class="github-button" href=https://github.com/vmware/harbor/fork data-icon="octicon-repo-forked" data-show-count="true" aria-label="Fork ntkme/github-buttons on GitHub">Fork</a>
+</div>
+        
+
+      </div>
+    </div>
+    <div class="right col-item has-animation">
+      
+      <div id="anim--what-is-harbor" class="bodymovin-animation" base-dir="what-is-harbor" base-file="data.json"></div>
+    </div>
+  </div>
+</section>
+<section class="module module--column getting-started col-2">
+  <a name="getting-started"></a>
+  <div class="container">
+    <div class="left col-item has-animation">
+      <div id="anim--getting-started" class="bodymovin-animation" base-dir="getting-started" base-file="data.json"></div>
+    </div>
+    <div class="right col-item">
+      <h2 class="module-title">Getting Started</h2>
+      <div class="content">
+        <p>Harbor can be installed on any system with Docker support.
+        Read more about getting started and using Harbor below.</p>
+
+        <a href="https://github.com/vmware/harbor/blob/master/docs/installation_guide.md" class="hlink">Readme</a>&nbsp;&nbsp;
+        <a href="https://github.com/vmware/harbor/blob/master/docs/installation_guide.md" class="hlink">Installation Guide</a>&nbsp;&nbsp;
+        <a href="https://github.com/vmware/harbor/blob/master/docs/user_guide.md" class="hlink">User Guide</a>
+
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="module module--key-features">
+    <div class="container">
+        <h2 class="module-title center">Key Features</h2>
+        <div class="items">
+        
+            <div class="item">
+                <div class="item-icon">
+                    <img src=/img/icons/multi-content-icon.svg />
+                </div>
+                <div class="item-title">
+                    Multi-tenant content signing and validation
+                </div>
+            </div>
+        
+            <div class="item">
+                <div class="item-icon">
+                    <img src=/img/icons/security-icon.svg />
+                </div>
+                <div class="item-title">
+                    Security and vulnerability analysis
+                </div>
+            </div>
+        
+            <div class="item">
+                <div class="item-icon">
+                    <img src=/img/icons/identity-integration-icon.svg />
+                </div>
+                <div class="item-title">
+                    Identity integration and role-based access control
+                </div>
+            </div>
+        
+            <div class="item">
+                <div class="item-icon">
+                    <img src=/img/icons/image-replication-icon.svg />
+                </div>
+                <div class="item-title">
+                    Image replication between instances
+                </div>
+            </div>
+        
+            <div class="item">
+                <div class="item-icon">
+                    <img src=/img/icons/extensible-api-icon.svg />
+                </div>
+                <div class="item-title">
+                    Extensible API and graphical UI
+                </div>
+            </div>
+        
+            <div class="item">
+                <div class="item-icon">
+                    <img src=/img/icons/international-icon.svg />
+                </div>
+                <div class="item-title">
+                    Internationalization (currently English and Chinese)
+                </div>
+            </div>
+        
+        </div>
+    </div>
+</section>
+    <section class="module module--our-community">
+    <div class="container">
+        <h2 class="module-title">Our Community</h2>
+        <div class="items">
+            
+            <div class="item">
+                <div class="item-icon">
+                    <a href=https://twitter.com/project_harbor target="_blank" svg-item=/img/icons/twitter-icon.svg>
+                        <img src=/img/icons/twitter-icon.svg class=""/>
+                    </a>
+                </div>
+                <div class="item-title">
+                    <a href=https://twitter.com/project_harbor target="_blank">
+                        Twitter
+                    </a>
+                </div>
+            </div>
+            
+            <div class="item">
+                <div class="item-icon">
+                    <a href=https://vmwarecode.slack.com/messages/harbor target="_blank" svg-item=/img/icons/slack-icon.svg>
+                        <img src=/img/icons/slack-icon.svg class=""/>
+                    </a>
+                </div>
+                <div class="item-title">
+                    <a href=https://vmwarecode.slack.com/messages/harbor target="_blank">
+                        Slack
+                    </a>
+                </div>
+            </div>
+            
+            <div class="item">
+                <div class="item-icon">
+                    <a href=https://groups.google.com/forum/#!forum/harbor-users target="_blank" svg-item=/img/icons/user-group-icon.svg>
+                        <img src=/img/icons/user-group-icon.svg class=""/>
+                    </a>
+                </div>
+                <div class="item-title">
+                    <a href=https://groups.google.com/forum/#!forum/harbor-users target="_blank">
+                        User Group
+                    </a>
+                </div>
+            </div>
+            
+            <div class="item">
+                <div class="item-icon">
+                    <a href=https://groups.google.com/forum/#!forum/harbor-dev target="_blank" svg-item=/img/icons/dev-group-icon.svg>
+                        <img src=/img/icons/dev-group-icon.svg class=""/>
+                    </a>
+                </div>
+                <div class="item-title">
+                    <a href=https://groups.google.com/forum/#!forum/harbor-dev target="_blank">
+                        Developer Group
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="cta has-text-centered">
+            <a href=/community class="hbutton-outline-violet button">
+                Discover how to join
+            </a>
+        </div>
+        
+    </div>
+</section>
+    <section class="module module--clients">
+    <div class="container">
+        <h2 class="module-title">Users and Partners of Harbor</h2>
+        <div class="items owl-carousel">
+            
+                
+                    <div class="item">
+                        <div class="item-icon">
+                            <a href=https://www.axatp.com/ target="_blank">
+                                <img src=/img/logos/users-partners/axa-logo.png />
+                            </a>
+                        </div>
+                        <div class="item-title">
+                            <a href=https://www.axatp.com/ target="_blank">
+                                axatp
+                            </a>
+                        </div>
+                    </div>
+                
+            
+                
+            
+                
+                    <div class="item">
+                        <div class="item-icon">
+                            <a href=http://www.beyondsoft.com/ target="_blank">
+                                <img src=/img/logos/users-partners/beyond-logo.png />
+                            </a>
+                        </div>
+                        <div class="item-title">
+                            <a href=http://www.beyondsoft.com/ target="_blank">
+                                beyondsoft
+                            </a>
+                        </div>
+                    </div>
+                
+            
+                
+                    <div class="item">
+                        <div class="item-icon">
+                            <a href=http://www.bingocloud.cn/ target="_blank">
+                                <img src=/img/logos/users-partners/bingo-logo.png />
+                            </a>
+                        </div>
+                        <div class="item-title">
+                            <a href=http://www.bingocloud.cn/ target="_blank">
+                                bingocloud
+                            </a>
+                        </div>
+                    </div>
+                
+            
+                
+                    <div class="item">
+                        <div class="item-icon">
+                            <a href=http://www.boco.com.cn:8081/ target="_blank">
+                                <img src=/img/logos/users-partners/boco-logo.png />
+                            </a>
+                        </div>
+                        <div class="item-title">
+                            <a href=http://www.boco.com.cn:8081/ target="_blank">
+                                bocoit
+                            </a>
+                        </div>
+                    </div>
+                
+            
+                
+                    <div class="item">
+                        <div class="item-icon">
+                            <a href=http://www.boericasa.com/index.html target="_blank">
+                                <img src=/img/logos/users-partners/boer-logo.png />
+                            </a>
+                        </div>
+                        <div class="item-title">
+                            <a href=http://www.boericasa.com/index.html target="_blank">
+                                boer
+                            </a>
+                        </div>
+                    </div>
+                
+            
+                
+                    <div class="item">
+                        <div class="item-icon">
+                            <a href=https://caicloud.io/ target="_blank">
+                                <img src=/img/logos/users-partners/caicloud-logo.png />
+                            </a>
+                        </div>
+                        <div class="item-title">
+                            <a href=https://caicloud.io/ target="_blank">
+                                caicloud
+                            </a>
+                        </div>
+                    </div>
+                
+            
+                
+                    <div class="item">
+                        <div class="item-icon">
+                            <a href=http://www.cloudchef.io/ target="_blank">
+                                <img src=/img/logos/users-partners/cloudchef-logo.png />
+                            </a>
+                        </div>
+                        <div class="item-title">
+                            <a href=http://www.cloudchef.io/ target="_blank">
+                                cloudchef
+                            </a>
+                        </div>
+                    </div>
+                
+            
+                
+                    <div class="item">
+                        <div class="item-icon">
+                            <a href=http://www.cloud-star.com.cn/ target="_blank">
+                                <img src=/img/logos/users-partners/cloud-logo.png />
+                            </a>
+                        </div>
+                        <div class="item-title">
+                            <a href=http://www.cloud-star.com.cn/ target="_blank">
+                                cloudstar
+                            </a>
+                        </div>
+                    </div>
+                
+            
+                
+            
+                
+                    <div class="item">
+                        <div class="item-icon">
+                            <a href=https://www.datayes.com/en/?lang&#61;en-US target="_blank">
+                                <img src=/img/logos/users-partners/datayes-logo.png />
+                            </a>
+                        </div>
+                        <div class="item-title">
+                            <a href=https://www.datayes.com/en/?lang&#61;en-US target="_blank">
+                                datayes
+                            </a>
+                        </div>
+                    </div>
+                
+            
+                
+                    <div class="item">
+                        <div class="item-icon">
+                            <a href=http://www.hydsoft.com/en/ target="_blank">
+                                <img src=/img/logos/users-partners/hydsoft-logo.png />
+                            </a>
+                        </div>
+                        <div class="item-title">
+                            <a href=http://www.hydsoft.com/en/ target="_blank">
+                                hydsoft
+                            </a>
+                        </div>
+                    </div>
+                
+            
+                
+                    <div class="item">
+                        <div class="item-icon">
+                            <a href=http://www.ifre.com.cn/ target="_blank">
+                                <img src=/img/logos/users-partners/ifre-logo.png />
+                            </a>
+                        </div>
+                        <div class="item-title">
+                            <a href=http://www.ifre.com.cn/ target="_blank">
+                                ifre
+                            </a>
+                        </div>
+                    </div>
+                
+            
+                
+                    <div class="item">
+                        <div class="item-icon">
+                            <a href=https://www.trendmicro.com/en_au/business.html target="_blank">
+                                <img src=/img/logos/users-partners/micro-logo.png />
+                            </a>
+                        </div>
+                        <div class="item-title">
+                            <a href=https://www.trendmicro.com/en_au/business.html target="_blank">
+                                trendmicro
+                            </a>
+                        </div>
+                    </div>
+                
+            
+                
+                    <div class="item">
+                        <div class="item-icon">
+                            <a href=https://www.onstar.com.cn/portal/ZH/index/index.html target="_blank">
+                                <img src=/img/logos/users-partners/onstar-logo.png />
+                            </a>
+                        </div>
+                        <div class="item-title">
+                            <a href=https://www.onstar.com.cn/portal/ZH/index/index.html target="_blank">
+                                onstar
+                            </a>
+                        </div>
+                    </div>
+                
+            
+                
+                    <div class="item">
+                        <div class="item-icon">
+                            <a href=http://www.open.com.cn/ target="_blank">
+                                <img src=/img/logos/users-partners/open-logo.png />
+                            </a>
+                        </div>
+                        <div class="item-title">
+                            <a href=http://www.open.com.cn/ target="_blank">
+                                openedutainment
+                            </a>
+                        </div>
+                    </div>
+                
+            
+                
+                    <div class="item">
+                        <div class="item-icon">
+                            <a href=https://pivotal.io/ target="_blank">
+                                <img src=/img/logos/users-partners/pivotal-logo.png />
+                            </a>
+                        </div>
+                        <div class="item-title">
+                            <a href=https://pivotal.io/ target="_blank">
+                                pivotal
+                            </a>
+                        </div>
+                    </div>
+                
+            
+                
+                    <div class="item">
+                        <div class="item-icon">
+                            <a href=https://rancher.com/ target="_blank">
+                                <img src=/img/logos/users-partners/rancher-logo.png />
+                            </a>
+                        </div>
+                        <div class="item-title">
+                            <a href=https://rancher.com/ target="_blank">
+                                rancher
+                            </a>
+                        </div>
+                    </div>
+                
+            
+                
+                    <div class="item">
+                        <div class="item-icon">
+                            <a href=http://www.slamtec.com/en/ target="_blank">
+                                <img src=/img/logos/users-partners/slamtec-logo.png />
+                            </a>
+                        </div>
+                        <div class="item-title">
+                            <a href=http://www.slamtec.com/en/ target="_blank">
+                                slamtec
+                            </a>
+                        </div>
+                    </div>
+                
+            
+                
+                    <div class="item">
+                        <div class="item-icon">
+                            <a href=https://www.talkingdata.com/ target="_blank">
+                                <img src=/img/logos/users-partners/talkingdata-logo.png />
+                            </a>
+                        </div>
+                        <div class="item-title">
+                            <a href=https://www.talkingdata.com/ target="_blank">
+                                talkingdata
+                            </a>
+                        </div>
+                    </div>
+                
+            
+                
+                    <div class="item">
+                        <div class="item-icon">
+                            <a href=https://www.tenxcloud.com/ target="_blank">
+                                <img src=/img/logos/users-partners/tenxcloud-logo.png />
+                            </a>
+                        </div>
+                        <div class="item-title">
+                            <a href=https://www.tenxcloud.com/ target="_blank">
+                                tenxcloud
+                            </a>
+                        </div>
+                    </div>
+                
+            
+                
+                    <div class="item">
+                        <div class="item-icon">
+                            <a href=http://www.wise2c.com/ target="_blank">
+                                <img src=/img/logos/users-partners/wise-logo.png />
+                            </a>
+                        </div>
+                        <div class="item-title">
+                            <a href=http://www.wise2c.com/ target="_blank">
+                                wise2c
+                            </a>
+                        </div>
+                    </div>
+                
+            
+        </div>
+    </div>
+</section>
+
+
+    <footer class="footer footer-dark">
+  <div class="container">
+    <div class="columns">
+      <div class="column">
+        <div class="footer-logo">
+          <img src="https://goharbor.github.io/img/logos/harbor-logo-white.svg">
+        </div>
+        <div class="footer-copyright">
+          <p>&copy; 2018 GoHarbor.io. All Rights Reserved.</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="footer-column">
+          <div class="footer-header">
+            <h3>Getting Started</h3>
+          </div>
+          <ul class="link-list"><li class="link-list-item">
+              
+              <span class="icon-wrapper" img-path=/img/logos/github.svg>
+                <img src=/img/logos/github.svg class="svg icon" />
+              </span>
+              
+              <a href="https://vmware.github.io/harbor" class="link">
+                GitHub
+              </a>
+            </li><li class="link-list-item">
+              
+              <a href="https://github.com/vmware/harbor/blob/master/docs/user_guide.md" class="link">
+                User Guide
+              </a>
+            </li><li class="link-list-item">
+              
+              <a href="https://github.com/vmware/harbor/blob/master/docs/installation_guide.md" class="link">
+                Installation Guide
+              </a>
+            </li></ul>
+        </div>
+      </div>
+      <div class="column">
+        <div class="footer-column">
+          <div class="footer-header">
+            <h3>Community</h3>
+          </div>
+          <ul class="link-list"><li class="link-list-item">
+              
+              <span class="icon-wrapper" img-path=/img/icons/twitter-icon.svg>
+                <img src=/img/icons/twitter-icon.svg class="svg icon" />
+              </span>
+              
+              <a href="https://twitter.com/project_harbor" class="link">
+                Twitter
+              </a>
+            </li><li class="link-list-item">
+              
+              <span class="icon-wrapper" img-path=/img/icons/slack-icon.svg>
+                <img src=/img/icons/slack-icon.svg class="svg icon" />
+              </span>
+              
+              <a href="https://vmwarecode.slack.com/messages/harbor" class="link">
+                Slack
+              </a>
+            </li><li class="link-list-item">
+              
+              <span class="icon-wrapper" img-path=/img/icons/user-group-icon.svg>
+                <img src=/img/icons/user-group-icon.svg class="svg icon" />
+              </span>
+              
+              <a href="https://groups.google.com/forum/#!forum/harbor-users" class="link">
+                User Group
+              </a>
+            </li><li class="link-list-item">
+              
+              <span class="icon-wrapper" img-path=/img/icons/dev-group-icon.svg>
+                <img src=/img/icons/dev-group-icon.svg class="svg icon" />
+              </span>
+              
+              <a href="https://groups.google.com/forum/#!forum/harbor-dev" class="link">
+                Developer Group
+              </a>
+            </li></ul>
+        </div>
+      </div>
+
+      
+        
+          
+            
+            
+              
+                
+                
+                  
+                    
+                  
+                
+                
+                
+                  
+                    
+                  
+                
+                
+                
+                  
+                    
+                  
+                
+                
+                
+                  
+                    
+                  
+                
+                
+                
+                  
+                    
+                  
+                
+                
+              
+            
+          
+        
+      
+    </div>
+  </div>
+</footer>
+
+    <nav id="left-panel" class="main-menu-mobile">
+  <div class="left-menu-wrapper">
+      <div class="panel-header">
+          <a class="navbar-item has-logo" href="https://goharbor.github.io">
+              <img class="brand" src="https://goharbor.github.io/img/logos/harbor-logo-white.svg" alt="Main navbar logo">
+          </a>
+          <div id="panel-close" class="delete is-medium" style="float:right"></div>
+      </div>
+      <div class="menu">
+              <p class="menu-label">
+                  <a class="side-menu-item " href="/community">
+                      <i class="im im-icon-Cloud"></i>Community
+                  </a>
+              </p>
+              
+          
+          
+              
+                  
+                  
+                      
+                      
+                      
+                  
+              
+              
+                  
+                  
+                      
+                      
+                      
+                  
+              
+          
+          
+              
+          
+          
+              
+                  
+                  
+                      
+                      
+                      
+                  
+              
+              
+                  
+                  
+                      
+                      
+                      
+                  
+              
+          
+              <p class="menu-label">
+                  <a class="side-menu-item " href="/docs">
+                      <i class="im im-icon-Cloud"></i>Docs
+                  </a>
+              </p>
+              
+          
+          
+              
+                  
+                  
+                      
+                      
+                      
+                  
+              
+              
+                  
+                  
+                      
+                      
+                      
+                  
+              
+          
+          
+              
+          
+          
+              
+                  
+                  
+                      
+                      
+                      
+                  
+              
+              
+                  
+                  
+                      
+                      
+                      
+                  
+              
+          
+              <p class="menu-label">
+                  <a class="side-menu-item " href="/blogs">
+                      <i class="im im-icon-Cloud"></i>Blogs
+                  </a>
+              </p>
+              
+          
+          
+              
+                  
+                  
+                      
+                      
+                      
+                  
+              
+              
+                  
+                  
+                      
+                      
+                      
+                  
+              
+          
+          
+              
+          
+          
+              
+                  
+                  
+                      
+                      
+                      
+                  
+              
+              
+                  
+                  
+                      
+                      
+                      
+                  
+              
+          </div> 
+  </div>
+</nav>
+
+
+    
+    <div id="backtotop"><a href="#"></a></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="https://goharbor.github.io/js/jquery-panelslider/jquery.panelslider.min.js"></script>
+    <script src="https://goharbor.github.io/js/fresh.js"></script><script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="js/bodymovin/bodymovin.js"></script>
+  </body>
+</html>
