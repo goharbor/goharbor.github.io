@@ -3,13 +3,8 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://goharbor.github.io/blogs/</loc>
-    <lastmod>2018-06-27T14:12:26+10:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://goharbor.github.io/blogs/whats-next/</loc>
-    <lastmod>2018-06-27T14:12:26+10:00</lastmod>
+    <loc>https://goharbor.github.io/blogs/hello-world/</loc>
+    <lastmod>2018-07-12T12:11:15+04:00</lastmod>
   </url>
   
   <url>
@@ -23,13 +18,9 @@
   </url>
   
   <url>
-    <loc>https://goharbor.github.io/blogs/getting-started/</loc>
-    <lastmod>2018-06-26T14:12:26+10:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://goharbor.github.io/blogs/welcome/</loc>
-    <lastmod>2018-06-25T14:12:26+10:00</lastmod>
+    <loc>https://goharbor.github.io/blogs/</loc>
+    <lastmod>2018-07-12T12:11:15+04:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -39,7 +30,7 @@
   
   <url>
     <loc>https://goharbor.github.io/</loc>
-    <lastmod>2018-06-27T14:12:26+10:00</lastmod>
+    <lastmod>2018-07-12T12:11:15+04:00</lastmod>
     <priority>0</priority>
   </url>
   

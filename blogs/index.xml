@@ -6,44 +6,19 @@
     <description>Recent content in Blogs on Harbor</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 27 Jun 2018 14:12:26 +1000</lastBuildDate>
+    <lastBuildDate>Thu, 12 Jul 2018 12:11:15 +0400</lastBuildDate>
     
 	<atom:link href="https://goharbor.github.io/blogs/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>What&#39;s Next</title>
-      <link>https://goharbor.github.io/blogs/whats-next/</link>
-      <pubDate>Wed, 27 Jun 2018 14:12:26 +1000</pubDate>
+      <title>Hello world!</title>
+      <link>https://goharbor.github.io/blogs/hello-world/</link>
+      <pubDate>Thu, 12 Jul 2018 12:11:15 +0400</pubDate>
       
-      <guid>https://goharbor.github.io/blogs/whats-next/</guid>
-      <description>Donec posuere vulputate arcu. Morbi mattis ullamcorper velit. Sed augue ipsum, egestas nec, vestibulum et, malesuada adipiscing, dui. Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Cras risus ipsum, faucibus ut, ullamcorper id, varius ac, leo.
-Etiam sit amet orci eget eros faucibus tincidunt. Proin pretium, leo ac pellentesque mollis, felis nunc ultrices eros, sed gravida augue augue mollis justo. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero.</description>
-    </item>
-    
-    <item>
-      <title>Getting Started</title>
-      <link>https://goharbor.github.io/blogs/getting-started/</link>
-      <pubDate>Tue, 26 Jun 2018 14:12:26 +1000</pubDate>
-      
-      <guid>https://goharbor.github.io/blogs/getting-started/</guid>
-      <description>Cras non dolor. In ac felis quis tortor malesuada pretium. Sed libero. Fusce vulputate eleifend sapien. Aenean viverra rhoncus pede.
-Morbi nec metus. Duis lobortis massa imperdiet quam. Nunc sed turpis. Aenean tellus metus, bibendum sed, posuere ac, mattis non, nunc. Fusce vulputate eleifend sapien.
-In ut quam vitae odio lacinia tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia.</description>
-    </item>
-    
-    <item>
-      <title>Welcome</title>
-      <link>https://goharbor.github.io/blogs/welcome/</link>
-      <pubDate>Mon, 25 Jun 2018 14:12:26 +1000</pubDate>
-      
-      <guid>https://goharbor.github.io/blogs/welcome/</guid>
-      <description>This is a demo page to demonstrate what all blog posts will look like.
-All blog posts are powered through markdown file. Checkout this cheatsheet to see how markdown syntax works in Hugo: https://sourceforge.net/p/hugo-generator/wiki/markdown_syntax/
-Heading 1 Above text is what heading 1 looks like.
-Heading 2 Above text is what heading 2 looks like.
-Heading 3 Above text is what heading 3 looks like.
-Heading 4 Above text is what heading 4 looks like.</description>
+      <guid>https://goharbor.github.io/blogs/hello-world/</guid>
+      <description>Hello world! We&amp;rsquo;ve been hard at work on our new Harbor site, and we&amp;rsquo;re thrilled to finally open it up to the world!
+For those unfamiliar with Harbor, it is an open source cloud native registry with a focus on storing, scanning and securing content. Born out of a need for such a project at VMware, the registry&amp;rsquo;s roadmap and feature velocity is influenced by our community of users and developers.</description>
     </item>
     
   </channel>
