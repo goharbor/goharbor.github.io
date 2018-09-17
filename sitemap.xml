@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://goharbor.github.io/blogs/harbor-1.6.0-release/</loc>
+    <lastmod>2018-09-13T12:00:00+04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://goharbor.github.io/blogs/harbor-joins-cncf/</loc>
     <lastmod>2018-07-31T12:00:00+04:00</lastmod>
   </url>
@@ -24,7 +29,7 @@
   
   <url>
     <loc>https://goharbor.github.io/blogs/</loc>
-    <lastmod>2018-07-31T12:00:00+04:00</lastmod>
+    <lastmod>2018-09-13T12:00:00+04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -35,7 +40,7 @@
   
   <url>
     <loc>https://goharbor.github.io/</loc>
-    <lastmod>2018-07-31T12:00:00+04:00</lastmod>
+    <lastmod>2018-09-13T12:00:00+04:00</lastmod>
     <priority>0</priority>
   </url>
   

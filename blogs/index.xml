@@ -6,10 +6,21 @@
     <description>Recent content in Blogs on Harbor</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 31 Jul 2018 12:00:00 +0400</lastBuildDate>
+    <lastBuildDate>Thu, 13 Sep 2018 12:00:00 +0400</lastBuildDate>
     
 	<atom:link href="https://goharbor.github.io/blogs/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Harbor version 1.6.0 is live!</title>
+      <link>https://goharbor.github.io/blogs/harbor-1.6.0-release/</link>
+      <pubDate>Thu, 13 Sep 2018 12:00:00 +0400</pubDate>
+      
+      <guid>https://goharbor.github.io/blogs/harbor-1.6.0-release/</guid>
+      <description>Project Harbor has released version 1.6.0 with several new features such as Helm charts management, improved LDAP support, image replication, and database migrations. A big thank you to the community for your incredible continued support!
+Let&amp;rsquo;s dive into it what&amp;rsquo;s new:
+Helm charts management Helm has become the de facto package manager of Kubernetes, making it easy to to deploy a vast array of applications. We see a dedicated Helm chart repository as a must-have system to help build new enterprise IT infrastructure and platforms.</description>
+    </item>
     
     <item>
       <title>Harbor Joins CNCF</title>
