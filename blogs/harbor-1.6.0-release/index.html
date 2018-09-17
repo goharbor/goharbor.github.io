@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>
+          Harbor
+          </title>
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="https://goharbor.github.io/img/favicon.png" />
+    <link rel="stylesheet" href="https://goharbor.github.io/css/bulma.min.css" />
+    <link rel="stylesheet" href="https://goharbor.github.io/css/icons.css" />
+    <link rel="stylesheet" href="https://goharbor.github.io/css/core.css" />
+
+  </head><body
+    
+      class='page---blogs--harbor-1.6.0-release'
+    
+  >
+
+    
+      
+    
+
+    
+
+  
+
+
+<div class="navbar-wrapper navbar-sticky">
+  <div class="hero-head">
+    <div class="container">
+      <nav class="navbar">
+        <div class="navbar-start">
+          <a class="navbar-item has-logo" href="https://goharbor.github.io">
+            <img class="brand" src="https://goharbor.github.io/img/logos/harbor-logo-white.svg" alt="Main navbar logo">
+          </a>
+          <span>
+          <a href=https://goharbor.github.io#getting-started class="get-started button rounded secondary-btn raised">
+            Get Started
+          </a>
+            </span>
+          <a id="panel-trigger" href="#left-panel" class="navbar-item navbar-inner hamburger-btn" href="javascript:void(0);">
+            <span class="menu-toggle">
+              <span class="icon-box-toggle">
+                <span class="rotate">
+                  <i class="icon-line-top"></i>
+                  <i class="icon-line-center"></i>
+                  <i class="icon-line-bottom"></i>
+                </span>
+              </span>
+            </span>
+          </a>
+        </div>
+        <span class="navbar-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+        <div class="navbar-end navbar-menu">
+              <a class="navbar-item is-tab navbar-inner" href="/community">
+                Community
+              </a>
+              <a class="navbar-item is-tab navbar-inner" href="/docs">
+                Docs
+              </a>
+              <a class="navbar-item is-tab navbar-inner" href="/blogs">
+                Blogs
+              </a><span class="navbar-item main-cta">
+            <a href=https://goharbor.github.io#getting-started class="get-started button cta is-large rounded secondary-btn raised">
+              Get Started
+            </a>
+          </span>
+
+        </div>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    
+    
+
+    <section class="module first module--blogpost-hero">
+
+    <div class="container wrap">
+        <h1 class="page-title">Harbor version 1.6.0 is live!</h1>
+        
+
+  <div class="article-info">
+    <div class="list-date">Thursday, Sep 13, 2018</div>
+    <div class="list-author">
+      
+      <span class="list-author-name">
+        Harbor Team
+      </span>
+      
+      
+        <span class="list-author-company">
+          VMware
+        </span>
+      
+    </div>
+    
+    <h3  class="blogpost-excerpt">Adding features such as Helm charts management, image replication and more</h3>
+    
+  </div>
+
+
+
+    </div>
+
+</section><section class="module module-content module--blogpost
+        
+            enabled-recent-posts
+        
+    ">
+        <div class="container wrap">
+            
+
+<p>Project Harbor has released version 1.6.0 with several new features such as Helm charts management, improved LDAP support, image replication, and database migrations. A big thank you to the community for your incredible continued support!</p>
+
+<p>Let&rsquo;s dive into it what&rsquo;s new:</p>
+
+<h2 id="helm-charts-management">Helm charts management</h2>
+
+<p><a href="https://helm.sh">Helm</a> has become the de facto package manager of Kubernetes, making it easy to to deploy a vast array of applications. We see a dedicated Helm chart repository as a must-have system to help build new enterprise IT infrastructure and platforms. Helm charts should work seamlessly together with container images, and therefore supporting both image management and Helm chart management has become the natural direction for Harbor.</p>
+
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube.com/embed/XSszSd-TTCQ" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+
+<h3 id="main-features">Main features</h3>
+
+<p>Starting with version 1.6.0, Harbor can serve as a unified cloud native registry for both image management requests and helm chart management requests. The main features are grouped into two perspectives:</p>
+
+<ul>
+<li><strong>Overall</strong>:
+
+<ul>
+<li>Charts are isolated by project namespace</li>
+<li>Access control is applied to charts by RBAC</li>
+</ul></li>
+<li><strong>User management portal</strong>:
+
+<ul>
+<li>List all the charts under the specified project namespace with list or card view</li>
+<li>List all the chart versions of one specified chart with list or card view</li>
+<li>Show the details of the specified chart version</li>
+<li>README content and other metadata information</li>
+<li>The signature prov file status</li>
+<li>Usage commands reference</li>
+<li>The dependencies of the chart version</li>
+<li>The value file content with the key-value view and yaml view</li>
+<li>Upload chart w/ prov file</li>
+<li>Download the specified chart version</li>
+<li>Delete the specified chart version</li>
+</ul></li>
+</ul>
+
+<p><strong>It&rsquo;s easy to get started with Helm charts and Harbor using the Helm CLI:</strong></p>
+
+<ul>
+<li>Use <code>helm repo add</code> to add Harbor as a unified chart repository with specified username, all the project namespaces accessible by that user should be visible to Helm.</li>
+<li>Use <code>helm repo add</code> to add a Harbor project as a separate chart repository, only the charts under that project are visible to Helm.</li>
+<li>Use the <a href="https://github.com/chartmuseum/helm-push">push</a> plugin of the <code>helm</code> CLI to push charts to Harbor</li>
+<li>Use <code>helm install</code> to download the chart from Harbor and install it to the target Kubernetes environment</li>
+<li>Other commands like <code>helm search</code> or <code>helm verify</code> are also supported</li>
+</ul>
+
+<p>For more details on managing Helm charts with Harbor, see the <a href="https://github.com/goharbor/harbor/blob/master/docs/user_guide.md#manage-helm-charts">user guide</a>.</p>
+
+<h2 id="ldap-group-support">LDAP group support</h2>
+
+<p>Many Harbor administrators are using LDAP to authenticate Harbor users, and then need to assign roles to each user. To make this more scalable Harbor now supports assigning roles to LDAP groups as well as individual users.</p>
+
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube.com/embed/DcArQEFgk5s" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+
+<h3 id="main-features-1">Main features</h3>
+
+<ul>
+<li>Assign role to LDAP group:
+
+<ul>
+<li>An administrator can import groups from an LDAP server by using their group DN. The LDAP users in this group now inherits the group&rsquo;s role.</li>
+</ul></li>
+<li>Define Harbor admin group DN:
+
+<ul>
+<li>After defining the Harbor admin group, all LDAP user in this group have Harbor administrator privileges.</li>
+</ul></li>
+</ul>
+
+<p>For more details on managing roles with LDAP groups, see the <a href="https://github.com/goharbor/harbor/blob/master/docs/manage_role_by_ldap_group.md">docs</a>.</p>
+
+<h2 id="replicate-images-with-label-filters">Replicate images with label filters</h2>
+
+<p>Two replication filters (repository name filter and repository tag filter) were introduced in the previous version of Harbor, they both need the filter pattern to match the images which should be replicated. Sometimes this is difficult or even impossible. With the introduction of label filters, users can add any label to the images without changing the name of them.</p>
+
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube.com/embed/mIdiXNnLq8Y" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+
+<h3 id="main-features-2">Main features</h3>
+
+<p>Users replicate images by adding labels to them and creating a new rule with the label filter.</p>
+
+<p>For more details on this, see the <a href="https://github.com/goharbor/harbor/blob/master/docs/user_guide.md#replicating-images">user guide</a>.</p>
+
+<h2 id="migrate-multiple-dbs-to-one-postgresql-db">Migrate multiple DBs to one PostgreSQL DB</h2>
+
+<p>In the previous releases, there are two or three database instances running on one Harbor node, which are MariaDB/MySQL and PostgreSQL. This of course increases the effort to maintain the Harbor system. This new feature makes it possible to merge multiple databases into a single database, making it far easier to maintain and make it possible to enable HA solutions for the future releases.</p>
+
+<h3 id="main-features-3">Main features</h3>
+
+<ul>
+<li>Migrate Harbor DB to PostgreSQL</li>
+<li>Migrate Notary DB to PostgreSQL</li>
+<li>Redirect Clair DB to Harbor/Notary DB</li>
+</ul>
+
+<p>For more information about the release and how to get started with version 1.6.0, head over to the <a href="https://github.com/goharbor/harbor/wiki/Release-1.6.0">wiki</a> and our <a href="https://github.com/goharbor/harbor/wiki/Video-demos-for-Harbor">list of videos</a> that shows off these new features.</p>
+
+
+            
+                
+                <aside class="recent-posts">
+                    <h3 class="module-title">Recent Articles</h3>
+                    <ul class="items">
+                        
+                            
+                            
+
+                        
+                            
+                            
+                                <li class="item"><a href="https://goharbor.github.io/blogs/harbor-1.6.0-release/">Harbor version 1.6.0 is live!</a></li>
+                            
+
+                        
+                            
+                            
+                                <li class="item"><a href="https://goharbor.github.io/blogs/harbor-joins-cncf/">Harbor Joins CNCF</a></li>
+                            
+
+                        
+                            
+                            
+                                <li class="item"><a href="https://goharbor.github.io/blogs/hello-world/">Hello world!</a></li>
+                            
+
+                        
+                    </ul>
+                </aside>
+            
+
+        </div>
+    </section>
+
+    
+
+<section class="module module--community-articles">
+    <div class="container">
+
+        <h2 class="module-title">Related articles from the Community</h2>
+
+        <div class="list-items">
+
+        
+        
+
+        
+        
+            
+            
+            
+        
+            
+            
+        
+            
+            
+            
+        
+            
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+
+
+        
+            
+            <div class="not-found">
+                <p>
+                    No matching community articles found at this time.
+                </p>
+            </div>
+        
+        </div>
+
+    </div>
+</section>
+
+
+
+
+    <footer class="footer footer-dark">
+  <div class="container">
+    <div class="columns">
+      <div class="column">
+        <div class="footer-logo">
+          <img src="https://goharbor.github.io/img/logos/harbor-logo-white.svg">
+        </div>
+        <div class="footer-copyright">
+          <p>&copy; 2018 The Harbor Authors</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="footer-column">
+          <div class="footer-header">
+            <h3>Getting Started</h3>
+          </div>
+          <ul class="link-list"><li class="link-list-item">
+              
+              <span class="icon-wrapper" img-path=/img/logos/github.svg>
+                <img src=/img/logos/github.svg class="svg icon" />
+              </span>
+              
+              <a href="https://vmware.github.io/harbor" class="link">
+                GitHub
+              </a>
+            </li><li class="link-list-item">
+              
+              <a href="https://github.com/vmware/harbor/blob/master/docs/user_guide.md" class="link">
+                User Guide
+              </a>
+            </li><li class="link-list-item">
+              
+              <a href="https://github.com/vmware/harbor/blob/master/docs/installation_guide.md" class="link">
+                Installation Guide
+              </a>
+            </li><li class="link-list-item">
+              
+              <a href="https://github.com/vmware/harbor/blob/master/docs/demo_server.md" class="link">
+                Demo Server
+              </a>
+            </li></ul>
+        </div>
+      </div>
+      <div class="column">
+        <div class="footer-column">
+          <div class="footer-header">
+            <h3>Community</h3>
+          </div>
+          <ul class="link-list"><li class="link-list-item">
+              
+              <span class="icon-wrapper" img-path=/img/icons/twitter-icon.svg>
+                <img src=/img/icons/twitter-icon.svg class="svg icon" />
+              </span>
+              
+              <a href="https://twitter.com/project_harbor" class="link">
+                Twitter
+              </a>
+            </li><li class="link-list-item">
+              
+              <span class="icon-wrapper" img-path=/img/icons/slack-icon.svg>
+                <img src=/img/icons/slack-icon.svg class="svg icon" />
+              </span>
+              
+              <a href="https://cncf.slack.com/messages/harbor" class="link">
+                Slack
+              </a>
+            </li><li class="link-list-item">
+              
+              <span class="icon-wrapper" img-path=/img/icons/user-group-icon.svg>
+                <img src=/img/icons/user-group-icon.svg class="svg icon" />
+              </span>
+              
+              <a href="https://groups.google.com/forum/#!forum/harbor-users" class="link">
+                User Group
+              </a>
+            </li><li class="link-list-item">
+              
+              <span class="icon-wrapper" img-path=/img/icons/dev-group-icon.svg>
+                <img src=/img/icons/dev-group-icon.svg class="svg icon" />
+              </span>
+              
+              <a href="https://groups.google.com/forum/#!forum/harbor-dev" class="link">
+                Developer Group
+              </a>
+            </li></ul>
+        </div>
+      </div>
+
+      
+        
+          
+            
+            
+              
+                
+                
+                  
+                    
+                  
+                
+                
+                
+                  
+                    
+                  
+                
+                
+                
+                  
+                    
+                  
+                
+                
+                
+                  
+                    
+                  
+                
+                
+                
+                  
+                    
+                  
+                
+                
+              
+            
+          
+        
+      
+    </div>
+  </div>
+</footer>
+
+    <nav id="left-panel" class="main-menu-mobile">
+  <div class="left-menu-wrapper">
+      <div class="panel-header">
+          <a class="navbar-item has-logo" href="https://goharbor.github.io">
+              <img class="brand" src="https://goharbor.github.io/img/logos/harbor-logo-white.svg" alt="Main navbar logo">
+          </a>
+          <div id="panel-close" class="delete is-medium" style="float:right"></div>
+      </div>
+      <div class="menu">
+              <p class="menu-label">
+                  <a class="side-menu-item " href="/community">
+                      <i class="im im-icon-Cloud"></i>Community
+                  </a>
+              </p>
+              
+          
+          
+              
+                  
+                  
+                      
+                      
+                      
+                  
+              
+              
+                  
+                  
+                      
+                      
+                      
+                  
+              
+          
+          
+              
+          
+          
+              
+                  
+                  
+                      
+                      
+                      
+                  
+              
+              
+                  
+                  
+                      
+                      
+                      
+                  
+              
+          
+              <p class="menu-label">
+                  <a class="side-menu-item " href="/docs">
+                      <i class="im im-icon-Cloud"></i>Docs
+                  </a>
+              </p>
+              
+          
+          
+              
+                  
+                  
+                      
+                      
+                      
+                  
+              
+              
+                  
+                  
+                      
+                      
+                      
+                  
+              
+          
+          
+              
+          
+          
+              
+                  
+                  
+                      
+                      
+                      
+                  
+              
+              
+                  
+                  
+                      
+                      
+                      
+                  
+              
+          
+              <p class="menu-label">
+                  <a class="side-menu-item " href="/blogs">
+                      <i class="im im-icon-Cloud"></i>Blogs
+                  </a>
+              </p>
+              
+          
+          
+              
+                  
+                  
+                      
+                      
+                      
+                  
+              
+              
+                  
+                  
+                      
+                      
+                      
+                  
+              
+          
+          
+              
+          
+          
+              
+                  
+                  
+                      
+                      
+                      
+                  
+              
+              
+                  
+                  
+                      
+                      
+                      
+                  
+              
+          </div> 
+  </div>
+</nav>
+
+
+    
+    <div id="backtotop"><a href="#"></a></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="https://goharbor.github.io/js/jquery-panelslider/jquery.panelslider.min.js"></script>
+    <script src="https://goharbor.github.io/js/fresh.js"></script><script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="js/bodymovin/bodymovin.js"></script>
+  </body>
+</html>
