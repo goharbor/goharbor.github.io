@@ -6,10 +6,20 @@
     <description>Recent content on Harbor</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 13 Sep 2018 12:00:00 +0400</lastBuildDate>
+    <lastBuildDate>Thu, 18 Oct 2018 12:00:00 +0400</lastBuildDate>
     
 	<atom:link href="https://goharbor.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Contributing to Harbor 101</title>
+      <link>https://goharbor.github.io/blogs/contributing/</link>
+      <pubDate>Thu, 18 Oct 2018 12:00:00 +0400</pubDate>
+      
+      <guid>https://goharbor.github.io/blogs/contributing/</guid>
+      <description>We&amp;rsquo;re elated at the increased community involvement since the donation of Harbor to the Cloud Native Computing Foundation. There&amp;rsquo;s lots of interest around the project, including a steady buzz of activity in our Slack channels and on GitHub.
+This blog post is for those interested in contributing to a CNCF project that may not have much experience with the various steps involved. We&amp;rsquo;re a friendly bunch of developer and the best part of our work on Harbor is interacting with the community!</description>
+    </item>
     
     <item>
       <title>Harbor version 1.6.0 is live!</title>

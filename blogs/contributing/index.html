@@ -18,7 +18,7 @@
 
   </head><body
     
-      class='page---blogs--harbor-joins-cncf'
+      class='page---blogs--contributing'
     
   >
 
@@ -89,25 +89,21 @@
     <section class="module first module--blogpost-hero">
 
     <div class="container wrap">
-        <h1 class="page-title">Harbor Joins CNCF</h1>
+        <h1 class="page-title">Contributing to Harbor 101</h1>
         
 
   <div class="article-info">
-    <div class="list-date">Tuesday, Jul 31, 2018</div>
+    <div class="list-date">Thursday, Oct 18, 2018</div>
     <div class="list-author">
       
       <span class="list-author-name">
-        Harbor Team
+        Harbor Maintainers
       </span>
       
       
-        <span class="list-author-company">
-          VMware
-        </span>
-      
     </div>
     
-    <h3  class="blogpost-excerpt">Project Harbor has joined the Cloud Native Computing Foundation</h3>
+    <h3  class="blogpost-excerpt">How to get involved with Harbor</h3>
     
   </div>
 
@@ -123,36 +119,157 @@
         <div class="container wrap">
             
 
-<h2 id="harbor-joins-the-cncf">Harbor Joins the CNCF</h2>
+<p>We&rsquo;re elated at the increased community involvement since the donation of
+Harbor to the Cloud Native Computing Foundation. There&rsquo;s lots of interest
+around the project, including a steady buzz of activity in our Slack channels
+and on GitHub.</p>
 
-<p>Today we are thrilled to announce that Harbor has become an official top-level
-CNCF project, joining the ranks of other widely-used cloud native projects
-like Rook, SPIFFE, Spire, Open Policy Agent, CloudEvents and Telepresence.
-Harbor will enter the CNCF as a sandbox project as we continue to add features
-and functionality desired by our community.</p>
+<p>This blog post is for those interested in contributing to a CNCF project that
+may not have much experience with the various steps involved. We&rsquo;re a friendly
+bunch of developer and the best part of our work on Harbor is interacting with
+the community!</p>
 
-<p>Harbor would simply not be where it is today if it wasn’t for our community’s
-engagement through issues, pull requests, discussions, code, documentation,
-and many other contributions. Since being open sourced in 2016, we’ve seen the
-number of users and contributors rapidly rise and a codebase that started in
-2014 as a humble side-project has grown beyond our initial expectations.
-Perhaps most humbling is the vast array of individuals and organizations that
-have joined our user community and put their trust in Harbor.</p>
+<p>Contributing to an open source project can initially seem daunting. If you&rsquo;re
+feeling like there are &ldquo;more qualified&rdquo; individuals to hop in and help, we&rsquo;ve
+all been there.  We all start somewhere and the great thing about open source
+&ndash; including and especially Harbor &ndash; is that this is a no-judgement
+community.  We welcome contributors with all sorts of experiences and
+backgrounds, from well-spoken writers eager to make our documentation clearer,
+to bug hunters that are talented at finding the most obscure corner cases, to
+life-long developers that have been hacking at code for decades &ndash; we
+appreciate <em>ALL</em> contributions.</p>
 
-<p>Despite our successes, the journey really begins now. With the CNCF’s support,
-we hope to see involvement in Harbor increase even more. Our team
-fundamentally believes that Harbor finding a home in a vendor-neutral Open
-Source community like the CNCF will enable and prompt contributors from all
-walks to jump in contribute and help make Harbor project better than ever.</p>
+<p>The topic of contributing to an open source project is vast, particularly
+with a project like Harbor that has lots of moving parts. This will be the
+first of (hopefully) several posts where we discuss how to dive into the
+project and help. I&rsquo;ll make an effort to be both succinct and practical &ndash;
+please feel free to fork the repo and follow along with the blog post.</p>
 
-<p>I’d encourage you to join us: let’s hack on some code. Let’s squash bugs.
-Let’s debate the technical merits of new and exciting features. Let’s make
-Harbor the best cloud native registry available.</p>
+<p>The only thing that might help in following along is a bit of experience with
+Git. Fortunately there are some tremendous
+<a href="https://git-scm.com/book/en/v2">resources</a> available for learning Git to
+varying degrees of interest. GitHub also has some good documentation that
+describes the various steps involved in the contribution process, and I&rsquo;ll
+link to those as appropriate. Because Harbor is hosted on GitHub,
+understanding <a href="https://guides.github.com/introduction/flow/">GitHub flow</a> will
+make things much simpler as we tackle our first contribution. Read through
+this <a href="https://guides.github.com/introduction/flow/">quick tutorial</a> and make
+sure you grasp the basic concepts before moving forward. If you have
+questions, ping us
+on Slack. :)</p>
 
-<p>A special thanks to the community members that have gotten us to where we are
-and supported us along the way–too many to list here. We’d also like to extend
-our deepest gratitude to Ken Owens and Quinton Hoole who both sponsored our
-proposal in the TOC and shepherded us through the donation process.</p>
+<h2 id="forking-the-repo">Forking the repo</h2>
+
+<p>Let&rsquo;s start with the first step in any contribution to Harbor: forking the repo.
+GitHub has a <a href="https://help.github.com/articles/fork-a-repo/">great page</a> that
+describes <em>how</em> and <em>why</em> we fork and, as described in said page, this is the
+first step, whether contributing docs, tests or code.</p>
+
+<p><img src="https://help.github.com/assets/images/help/repository/fork_button.jpg" alt="Forking the
+repo" />.</p>
+
+<p>Congrats &ndash; you&rsquo;re half way there!</p>
+
+<h3 id="hunting-for-things-to-improve">Hunting for Things to Improve</h3>
+
+<p>Now comes the fun part: finding something to improve. A good starting place
+is documentation.</p>
+
+<p>Docs are the easiest place to start making contributions, if only because
+there&rsquo;s minimal cognitive overhead involved when updating documentation.
+There&rsquo;s <em>always</em> room to improve documentation: cleaning up dead links, fixing
+typos, clarifying content and instructions, and creating new documentation to
+make things clearer for users of the Harbor platform.</p>
+
+<h3 id="creating-a-branch">Creating a Branch</h3>
+
+<p>As is discussed in the GitHub flow
+<a href="https://guides.github.com/introduction/flow/">tutorial</a> and the <a href="https://opensource.guide/how-to-contribute/#finding-a-project-to-contribute-to">Open Source
+guide</a>,
+creating a branch is the first step in the process. Branches are used as
+&ldquo;sandboxes&rdquo; where your proposed changes are located. In general, creating
+a branch is as easy as this:</p>
+
+<p><code>$ git checkout -b doc-improvements</code></p>
+
+<h3 id="preparing-to-make-changes-to-your-fork">Preparing to Make Changes (to your fork)</h3>
+
+<p>The <a href="https://help.github.com/articles/fork-a-repo/">previously-referenced</a>
+GitHub documentation describes the various steps involved, but for
+completeness we&rsquo;ll discuss here:</p>
+
+<p>Critically, make sure you&rsquo;re still in the right branch:</p>
+
+<p><code>$ git status</code></p>
+
+<p>The first line of the status output should show that you&rsquo;re in your feature
+branch, in our case <code>doc-improvements</code>. Still with me?</p>
+
+<h4 id="improving-the-docs">Improving the Docs</h4>
+
+<p>Fire up your favorite text editor &ndash; VSCode, Atom, vim, emacs, even nano(!) &ndash;
+and open the doc file you&rsquo;d like to improve. Update the documentation as
+appropriate, save it and then get ready to push it to your Harbor fork.</p>
+
+<p>From a terminal, a <code>git status</code> will show you what file you&rsquo;ve just edited.
+Make sure this looks right.</p>
+
+<p>I&rsquo;ll also operate under the assumption that you&rsquo;ve set up <code>git</code> properly &ndash;
+specifically <code>user.name</code> and <code>user.email</code>. If in doubt, take a look at
+<a href="https://help.github.com/articles/setting-your-commit-email-address-in-git/">this</a>
+doc <em>first</em>. This is important because it ensures that the changes you make
+are properly attributed to <em>you</em>!</p>
+
+<h4 id="committing-and-pushing-changes">Committing and Pushing Changes</h4>
+
+<p>The next (almost there!) step is to commit the changes in your branch and push
+upstream:</p>
+
+<pre><code>$ git commit --verbose --signoff --message=&quot;Updating documentation to improve
+&lt;something&gt;&quot;
+$ git push --set-upstream origin &lt;my_branch_name&gt;
+</code></pre>
+
+<p>The <code>push</code> command will take your changes and push it to your fork of the
+Harbor repo. Now we&rsquo;re ready to create a Pull Request.</p>
+
+<h4 id="creating-a-pull-request">Creating a Pull Request</h4>
+
+<p>This is perhaps the easiest part of the process. Head over to your fork on
+GitHub:
+[<a href="https://www.github.com/">https://www.github.com/</a><your_username>/harbor]()<a href="https://www.github.com/">https://www.github.com/</a><your_username>/harbor).</p>
+
+<p>A banner at the top of the repo will present you with the option of <a href="https://help.github.com/articles/creating-a-pull-request/">creating
+a pull request</a>.</p>
+
+<p><img src="https://help.github.com/assets/images/help/pull_requests/pull-request-review-edit-branch.png" alt="Creating a Pull
+Request" /></p>
+
+<p>Make sure the &ldquo;base&rdquo; branch is <code>master</code> in the <code>goharbor</code> organization. This
+tells GitHub to compare your changes (in your branch) to the upstream Harbor
+repository.</p>
+
+<h4 id="sit-back-and-relax">Sit Back and Relax</h4>
+
+<p>Won&rsquo;t be long before we take a look at your Pull Request. Often there are
+minor suggestions along the way to make sure things are accurate, but this is
+the fun part of open source: collaboration!</p>
+
+<p>The Pull Request is very much a &ldquo;live conversation.&rdquo; Minor issues will likely
+be accepted in short order, while larger (perhaps more impacting changes)
+might result in a discussion. We don&rsquo;t bite, though, so please don&rsquo;t be
+timid: share your opinions, thoughts and feel free to (nicely) push back as
+appropriate. We make mistakes, too.</p>
+
+<h4 id="in-closing">In Closing</h4>
+
+<p>I&rsquo;ll follow-up with future blog posts with further discussion on how to
+contribute to Harbor. Contributing code can be more involved, particularly if
+the feature is large, but we encourage you to join the fun.  You can find us
+on GitHub, Slack or on the harbor-users and harbor-dev Google Groups mailing
+list.</p>
+
+<p>Thanks for reading!</p>
 
 
             
