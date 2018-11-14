@@ -6,15 +6,25 @@
     <description>Recent content in Blogs on Harbor</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 18 Oct 2018 12:00:00 +0400</lastBuildDate>
+    <lastBuildDate>Tue, 13 Nov 2018 20:15:00 +0400</lastBuildDate>
     
 	<atom:link href="https://goharbor.github.io/blogs/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Harbor Moves to Incubation</title>
+      <link>https://goharbor.github.io/blogs/harbor-moves-to-incubation/</link>
+      <pubDate>Tue, 13 Nov 2018 20:15:00 +0400</pubDate>
+      
+      <guid>https://goharbor.github.io/blogs/harbor-moves-to-incubation/</guid>
+      <description>Harbor Moves to the CNCF Incubator We are thrilled to announce the promotion of Harbor from the Cloud Native Sandbox to Incubating status as a CNCF project. Harbor is an open source cloud native registry project that stores, signs, and scans content. This milestone reflects Harbor’s significant achievements in the areas of community involvement, governance, feature enhancements and adoption.
+Over the last several months Harbor maintainers have been working closely with the community to improve everything from processes to codebase.</description>
+    </item>
+    
+    <item>
       <title>Contributing to Harbor 101</title>
       <link>https://goharbor.github.io/blogs/contributing/</link>
-      <pubDate>Thu, 18 Oct 2018 12:00:00 +0400</pubDate>
+      <pubDate>Thu, 04 Oct 2018 12:00:00 +0400</pubDate>
       
       <guid>https://goharbor.github.io/blogs/contributing/</guid>
       <description>We&amp;rsquo;re elated at the increased community involvement since the donation of Harbor to the Cloud Native Computing Foundation. There&amp;rsquo;s lots of interest around the project, including a steady buzz of activity in our Slack channels and on GitHub.

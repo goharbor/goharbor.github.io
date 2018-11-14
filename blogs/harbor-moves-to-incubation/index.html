@@ -18,7 +18,7 @@
 
   </head><body
     
-      class='page---blogs--harbor-joins-cncf'
+      class='page---blogs--harbor-moves-to-incubation'
     
   >
 
@@ -89,11 +89,11 @@
     <section class="module first module--blogpost-hero">
 
     <div class="container wrap">
-        <h1 class="page-title">Harbor Joins CNCF</h1>
+        <h1 class="page-title">Harbor Moves to Incubation</h1>
         
 
   <div class="article-info">
-    <div class="list-date">Tuesday, Jul 31, 2018</div>
+    <div class="list-date">Tuesday, Nov 13, 2018</div>
     <div class="list-author">
       
       <span class="list-author-name">
@@ -101,13 +101,9 @@
       </span>
       
       
-        <span class="list-author-company">
-          VMware
-        </span>
-      
     </div>
     
-    <h3  class="blogpost-excerpt">Project Harbor has joined the Cloud Native Computing Foundation</h3>
+    <h3  class="blogpost-excerpt">Project Harbor is now an incubated project at the Cloud Native Computing Foundation</h3>
     
   </div>
 
@@ -123,36 +119,64 @@
         <div class="container wrap">
             
 
-<h2 id="harbor-joins-the-cncf">Harbor Joins the CNCF</h2>
+<h2 id="harbor-moves-to-the-cncf-incubator">Harbor Moves to the CNCF Incubator</h2>
 
-<p>Today we are thrilled to announce that Harbor has become an official top-level
-CNCF project, joining the ranks of other widely-used cloud native projects
-like Rook, SPIFFE, Spire, Open Policy Agent, CloudEvents and Telepresence.
-Harbor will enter the CNCF as a sandbox project as we continue to add features
-and functionality desired by our community.</p>
+<p>We are thrilled to announce the promotion of Harbor from the Cloud Native
+Sandbox to Incubating status as a CNCF project. Harbor is an open source cloud
+native registry project that stores, signs, and scans content. This milestone
+reflects Harbor’s significant achievements in the areas of <a href="https://github.com/goharbor/harbor/graphs/contributors">community</a>
+involvement, governance, feature enhancements and adoption.</p>
 
-<p>Harbor would simply not be where it is today if it wasn’t for our community’s
-engagement through issues, pull requests, discussions, code, documentation,
-and many other contributions. Since being open sourced in 2016, we’ve seen the
-number of users and contributors rapidly rise and a codebase that started in
-2014 as a humble side-project has grown beyond our initial expectations.
-Perhaps most humbling is the vast array of individuals and organizations that
-have joined our user community and put their trust in Harbor.</p>
+<p>Over the last several months Harbor maintainers have been working closely with
+the community to improve everything from processes to codebase. These changes
+have made Harbor even more secure, scalable and available.</p>
 
-<p>Despite our successes, the journey really begins now. With the CNCF’s support,
-we hope to see involvement in Harbor increase even more. Our team
-fundamentally believes that Harbor finding a home in a vendor-neutral Open
-Source community like the CNCF will enable and prompt contributors from all
-walks to jump in contribute and help make Harbor project better than ever.</p>
+<p>Since joining the Sandbox earlier this year, the Harbor project has seen a
+marked increase in overall community participation, downloads, contributors,
+commits, and forks.</p>
 
-<p>I’d encourage you to join us: let’s hack on some code. Let’s squash bugs.
-Let’s debate the technical merits of new and exciting features. Let’s make
-Harbor the best cloud native registry available.</p>
+<p><img src="https://github.com/goharbor/goharbor.github.io/tree/master/img/misc/harbor-stats-nov2018.md" alt="Harbor stats" /></p>
 
-<p>A special thanks to the community members that have gotten us to where we are
-and supported us along the way–too many to list here. We’d also like to extend
-our deepest gratitude to Ken Owens and Quinton Hoole who both sponsored our
-proposal in the TOC and shepherded us through the donation process.</p>
+<p>We invite you to read more about Harbor, including our a roadmap on where we’re
+going, on the <a href="https://www.cncf.io/blog/2018/11/13/harbor-into-incubator/">cncf.io blog
+post</a>, but wanted
+to briefly highlight some recent major achievements:</p>
+
+<ul>
+<li>Native support of Helm charts.</li>
+<li>Support for deploying Harbor via Helm chart</li>
+<li>We’ve refactored of our persistence layer, now relying solely on PostgreSQL and Redis – this will help us achieve our high-availability goals over the long-term.</li>
+<li>Improved replication by allowing users to filter via labels.</li>
+<li>Improvements to RBAC, including LDAP group-based access control.</li>
+<li>Architecture simplification (i.e., collapsing admin server component responsibilities into core component) – <em>currently in progress</em>.</li>
+</ul>
+
+<h2 id="where-we-re-going">Where we&rsquo;re going</h2>
+
+<p>This is the fun part. :)</p>
+
+<p>We’re still working on the v1.8 roadmap, but here are some major features we’re considering and might land at some point in the future (timing to be determined, and contributions are welcome!):</p>
+
+<ul>
+<li>Quotas – system- and project-level quotas; networking quotas; bandwidth quotas; user quotas; etc.</li>
+<li>Replication – the ability to replicate to non-Harbor nodes.</li>
+<li>Image proxying and caching – a docker pull would proxy a request to, say, Docker Hub, then scan the image before providing to developer. Alternatively, pre-cache images and block images that do not meet vulnerability requirements.</li>
+<li>One-click upgrades and rollbacks of Harbor.</li>
+<li>Clustering – Harbor nodes should cluster, replicate metadata (users, RBAC and system configuration, vulnerability scan results, etc.). Support for wide-area clustering is a stretch goal.</li>
+<li>BitTorrent-backed storage – images are transparently transferred via BT protocol.</li>
+<li>Improved multi-tenancy – provide additional multi-tenancy construct (system → tenant → project)</li>
+</ul>
+
+<p>We’ll be opening a pool soon to allow users to vote on their desired features –
+the most important way users can impact the direction of the project!</p>
+
+<h2 id="closing-thoughts">Closing thoughts</h2>
+
+<p>We are deeply grateful for our <a href="https://goharbor.io/community/">community</a> –
+those who use Harbor and publicly share their experiences, the individuals who
+report and respond to issues, the folks who hang around in our Slack community,
+and those who spend time on GitHub improving the code and documentation. We’re
+excited to see how Harbor continues to progress over the next few years.</p>
 
 
             
