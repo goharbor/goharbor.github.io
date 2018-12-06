@@ -18,7 +18,7 @@
 
   </head><body
     
-      class='page---blogs--harbor-1.6.0-release'
+      class='page---blogs--harbor-at-kubecon-seattle-2018'
     
   >
 
@@ -89,11 +89,11 @@
     <section class="module first module--blogpost-hero">
 
     <div class="container wrap">
-        <h1 class="page-title">Harbor version 1.6.0 is live!</h1>
+        <h1 class="page-title">Harbor at KubeCon &#43; CloudNativeCon 2018 in Seattle</h1>
         
 
   <div class="article-info">
-    <div class="list-date">Thursday, Sep 13, 2018</div>
+    <div class="list-date">Thursday, Dec 6, 2018</div>
     <div class="list-author">
       
       <span class="list-author-name">
@@ -101,13 +101,9 @@
       </span>
       
       
-        <span class="list-author-company">
-          VMware
-        </span>
-      
     </div>
     
-    <h3  class="blogpost-excerpt">Adding features such as Helm charts management, image replication and more</h3>
+    <h3  class="blogpost-excerpt">The Harbor team is going to KubeCon &#43; CloudNativeCon for the first time as a CNCF project!</h3>
     
   </div>
 
@@ -123,116 +119,53 @@
         <div class="container wrap">
             
 
-<p>Project Harbor has released version 1.6.0 with several new features such as Helm charts management, improved LDAP support, image replication, and database migrations. A big thank you to the community for your incredible continued support!</p>
+<h2 id="harbor-team-is-heading-to-kubecon">Harbor Team is Heading to KubeCon!</h2>
 
-<p>Let&rsquo;s dive into it what&rsquo;s new:</p>
+<p>We&rsquo;re excited to share that we&rsquo;ll be at KubeCon + CloudNativeCon 2018 in
+Seattle next week!  Since KubeCon at Copenhagen (which many of us went to,
+though not representing any particular CNCF project) we&rsquo;ve been hard at work
+at improving Harbor by working closely with the community to understand their
+needs and wants.</p>
 
-<h2 id="helm-charts-management">Helm charts management</h2>
+<p>Today Harbor is
+a <a href="https://all.devstats.cncf.io/d/53/projects-health?orgId=1">healthy</a> and
+vibrant incubated project at the CNCF. We&rsquo;ve seen growth in our community and
+superb contributions in the form of issues, code, and project feedback.</p>
 
-<p><a href="https://helm.sh">Helm</a> has become the de facto package manager of Kubernetes, making it easy to to deploy a vast array of applications. We see a dedicated Helm chart repository as a must-have system to help build new enterprise IT infrastructure and platforms. Helm charts should work seamlessly together with container images, and therefore supporting both image management and Helm chart management has become the natural direction for Harbor.</p>
+<p>Our global team is arriving in Seattle over the weekend and is excited to
+engage with users, prospective users, and even those who are just curious
+to learn more about Harbor and what it does. We&rsquo;ll be wearing Harbor t-shirts
+throughout the conference, so if you see one of us please don&rsquo;t be shy and say
+hello!</p>
 
-
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="//www.youtube.com/embed/XSszSd-TTCQ" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
-
-
-<h3 id="main-features">Main features</h3>
-
-<p>Starting with version 1.6.0, Harbor can serve as a unified cloud native registry for both image management requests and helm chart management requests. The main features are grouped into two perspectives:</p>
-
-<ul>
-<li><strong>Overall</strong>:
-
-<ul>
-<li>Charts are isolated by project namespace</li>
-<li>Access control is applied to charts by RBAC</li>
-</ul></li>
-<li><strong>User management portal</strong>:
+<p>There are a few scheduled events / places to find us:</p>
 
 <ul>
-<li>List all the charts under the specified project namespace with list or card view</li>
-<li>List all the chart versions of one specified chart with list or card view</li>
-<li>Show the details of the specified chart version</li>
-<li>README content and other metadata information</li>
-<li>The signature prov file status</li>
-<li>Usage commands reference</li>
-<li>The dependencies of the chart version</li>
-<li>The value file content with the key-value view and yaml view</li>
-<li>Upload chart w/ prov file</li>
-<li>Download the specified chart version</li>
-<li>Delete the specified chart version</li>
-</ul></li>
+<li><strong>Meet the Maintainer Booth</strong> - find us at the CNCF Meet the Maintainer
+Booth on Tuesday from 2:00-3:30pm, Wednesday from 2:00-2:30pm, and Thursday
+from 10:30AM-11:30AM.</li>
+<li><strong>Harbor 101</strong> - Henry Zhou, founder of Harbor, and James Zabala, lead
+maintainer, will be presenting a 101-level presentation that discusses the
+why and hows of Harbor. If you want a 15,000 ft view of the container registry
+project and how it might fit in your organization, this is the presentation
+for you.</li>
+<li><strong>Harbor Deep Dive</strong> - Daniel Jiang and Steven Zou, both senior technical
+architects of the project, will be discussing how things tick under the hood.
+Want to learn about the core service, job service, or how we proxy Docker
+<code>push</code> and <code>pull</code> requests to ensure RBAC and vulnerability scan results are
+within policy? This is the session for you.</li>
+<li><strong>VMware Booth</strong> - Daniel Jiang, senior technical lead, will be at the
+VMware booth on Tuesday at 2:00pm.</li>
 </ul>
 
-<p><strong>It&rsquo;s easy to get started with Helm charts and Harbor using the Helm CLI:</strong></p>
+<p>We couldn&rsquo;t be more excited to join the community at this fun event and
+finally meet many of you in person. On a personal level, these events are
+really what make open source special: meeting those with whom you work on
+GitHub and Slack every day and discussing how to improve things moving
+forward IRL.</p>
 
-<ul>
-<li>Use <code>helm repo add</code> to add Harbor as a unified chart repository with specified username, all the project namespaces accessible by that user should be visible to Helm.</li>
-<li>Use <code>helm repo add</code> to add a Harbor project as a separate chart repository, only the charts under that project are visible to Helm.</li>
-<li>Use the <a href="https://github.com/chartmuseum/helm-push">push</a> plugin of the <code>helm</code> CLI to push charts to Harbor</li>
-<li>Use <code>helm install</code> to download the chart from Harbor and install it to the target Kubernetes environment</li>
-<li>Other commands like <code>helm search</code> or <code>helm verify</code> are also supported</li>
-</ul>
-
-<p>For more details on managing Helm charts with Harbor, see the <a href="https://github.com/goharbor/harbor/blob/master/docs/user_guide.md#manage-helm-charts">user guide</a>.</p>
-
-<h2 id="ldap-group-support">LDAP group support</h2>
-
-<p>Many Harbor administrators are using LDAP to authenticate Harbor users, and then need to assign roles to each user. To make this more scalable Harbor now supports assigning roles to LDAP groups as well as individual users.</p>
-
-
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="//www.youtube.com/embed/DcArQEFgk5s" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
-
-
-<h3 id="main-features-1">Main features</h3>
-
-<ul>
-<li>Assign role to LDAP group:
-
-<ul>
-<li>An administrator can import groups from an LDAP server by using their group DN. The LDAP users in this group now inherits the group&rsquo;s role.</li>
-</ul></li>
-<li>Define Harbor admin group DN:
-
-<ul>
-<li>After defining the Harbor admin group, all LDAP user in this group have Harbor administrator privileges.</li>
-</ul></li>
-</ul>
-
-<p>For more details on managing roles with LDAP groups, see the <a href="https://github.com/goharbor/harbor/blob/master/docs/manage_role_by_ldap_group.md">docs</a>.</p>
-
-<h2 id="replicate-images-with-label-filters">Replicate images with label filters</h2>
-
-<p>Two replication filters (repository name filter and repository tag filter) were introduced in the previous version of Harbor, they both need the filter pattern to match the images which should be replicated. Sometimes this is difficult or even impossible. With the introduction of label filters, users can add any label to the images without changing the name of them.</p>
-
-
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="//www.youtube.com/embed/mIdiXNnLq8Y" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
-
-
-<h3 id="main-features-2">Main features</h3>
-
-<p>Users replicate images by adding labels to them and creating a new rule with the label filter.</p>
-
-<p>For more details on this, see the <a href="https://github.com/goharbor/harbor/blob/master/docs/user_guide.md#replicating-images">user guide</a>.</p>
-
-<h2 id="migrate-multiple-dbs-to-one-postgresql-db">Migrate multiple DBs to one PostgreSQL DB</h2>
-
-<p>In the previous releases, there are two or three database instances running on one Harbor node, which are MariaDB/MySQL and PostgreSQL. This of course increases the effort to maintain the Harbor system. This new feature makes it possible to merge multiple databases into a single database, making it far easier to maintain and make it possible to enable HA solutions for the future releases.</p>
-
-<h3 id="main-features-3">Main features</h3>
-
-<ul>
-<li>Migrate Harbor DB to PostgreSQL</li>
-<li>Migrate Notary DB to PostgreSQL</li>
-<li>Redirect Clair DB to Harbor/Notary DB</li>
-</ul>
-
-<p>For more information about the release and how to get started with version 1.6.0, head over to the <a href="https://github.com/goharbor/harbor/wiki/Release-1.6.0">wiki</a> and our <a href="https://github.com/goharbor/harbor/wiki/Video-demos-for-Harbor">list of videos</a> that shows off these new features.</p>
+<p>By the way, mention this blog post and grab a free Harbor t-shirt at any one
+of the events listed above!</p>
 
 
             

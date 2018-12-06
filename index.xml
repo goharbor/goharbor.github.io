@@ -6,10 +6,20 @@
     <description>Recent content on Harbor</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 13 Nov 2018 20:15:00 +0400</lastBuildDate>
+    <lastBuildDate>Thu, 06 Dec 2018 12:00:00 +0400</lastBuildDate>
     
 	<atom:link href="https://goharbor.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Harbor at KubeCon &#43; CloudNativeCon 2018 in Seattle</title>
+      <link>https://goharbor.github.io/blogs/harbor-at-kubecon-seattle-2018/</link>
+      <pubDate>Thu, 06 Dec 2018 12:00:00 +0400</pubDate>
+      
+      <guid>https://goharbor.github.io/blogs/harbor-at-kubecon-seattle-2018/</guid>
+      <description>Harbor Team is Heading to KubeCon! We&amp;rsquo;re excited to share that we&amp;rsquo;ll be at KubeCon + CloudNativeCon 2018 in Seattle next week! Since KubeCon at Copenhagen (which many of us went to, though not representing any particular CNCF project) we&amp;rsquo;ve been hard at work at improving Harbor by working closely with the community to understand their needs and wants.
+Today Harbor is a healthy and vibrant incubated project at the CNCF.</description>
+    </item>
     
     <item>
       <title>Harbor Moves to Incubation</title>
