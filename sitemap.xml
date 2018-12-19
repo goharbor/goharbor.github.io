@@ -3,64 +3,69 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://goharbor.github.io/blogs/harbor-at-kubecon-seattle-2018/</loc>
+    <loc>https://goharbor.io/blogs/harbor-1.7.0-release/</loc>
+    <lastmod>2018-12-19T12:00:00+04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goharbor.io/blogs/harbor-at-kubecon-seattle-2018/</loc>
     <lastmod>2018-12-06T12:00:00+04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://goharbor.github.io/blogs/harbor-moves-to-incubation/</loc>
+    <loc>https://goharbor.io/blogs/harbor-moves-to-incubation/</loc>
     <lastmod>2018-11-13T20:15:00+04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://goharbor.github.io/blogs/contributing/</loc>
+    <loc>https://goharbor.io/blogs/contributing/</loc>
     <lastmod>2018-10-04T12:00:00+04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://goharbor.github.io/blogs/harbor-1.6.0-release/</loc>
+    <loc>https://goharbor.io/blogs/harbor-1.6.0-release/</loc>
     <lastmod>2018-09-13T12:00:00+04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://goharbor.github.io/blogs/harbor-joins-cncf/</loc>
+    <loc>https://goharbor.io/blogs/harbor-joins-cncf/</loc>
     <lastmod>2018-07-31T12:00:00+04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://goharbor.github.io/blogs/hello-world/</loc>
+    <loc>https://goharbor.io/blogs/hello-world/</loc>
     <lastmod>2018-07-12T12:11:15+04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://goharbor.github.io/community/</loc>
+    <loc>https://goharbor.io/community/</loc>
     <lastmod>2018-06-27T11:46:41+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://goharbor.github.io/docs/</loc>
+    <loc>https://goharbor.io/docs/</loc>
     <lastmod>2018-06-27T11:09:37+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://goharbor.github.io/blogs/</loc>
-    <lastmod>2018-12-06T12:00:00+04:00</lastmod>
+    <loc>https://goharbor.io/blogs/</loc>
+    <lastmod>2018-12-19T12:00:00+04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://goharbor.github.io/categories/</loc>
+    <loc>https://goharbor.io/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://goharbor.github.io/</loc>
-    <lastmod>2018-12-06T12:00:00+04:00</lastmod>
+    <loc>https://goharbor.io/</loc>
+    <lastmod>2018-12-19T12:00:00+04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://goharbor.github.io/tags/</loc>
+    <loc>https://goharbor.io/tags/</loc>
     <priority>0</priority>
   </url>
   

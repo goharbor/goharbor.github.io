@@ -17,7 +17,7 @@
 <link rel="stylesheet" href="/css/style.7dbdd0d47026f574c3e71a48f5e840962a96e917a85a87135a898d9668b65c26.css" integrity="">
   </head><body
     
-      class='page---blogs--harbor-at-kubecon-seattle-2018'
+      class='page---blogs--harbor-1.7.0-release'
     
   >
 
@@ -88,11 +88,11 @@
     <section class="module first module--blogpost-hero">
 
     <div class="container wrap">
-        <h1 class="page-title">Harbor at KubeCon &#43; CloudNativeCon 2018 in Seattle</h1>
+        <h1 class="page-title">Harbor v1.7: hot off the press!</h1>
         
 
   <div class="article-info">
-    <div class="list-date">Thursday, Dec 6, 2018</div>
+    <div class="list-date">Wednesday, Dec 19, 2018</div>
     <div class="list-author">
       
       <span class="list-author-name">
@@ -102,7 +102,7 @@
       
     </div>
     
-    <h3  class="blogpost-excerpt">The Harbor team is going to KubeCon &#43; CloudNativeCon for the first time as a CNCF project!</h3>
+    <h3  class="blogpost-excerpt">A fit, finish and polish release just in time for the holidays</h3>
     
   </div>
 
@@ -118,53 +118,71 @@
         <div class="container wrap">
             
 
-<h2 id="harbor-team-is-heading-to-kubecon">Harbor Team is Heading to KubeCon!</h2>
+<h2 id="announcing-the-release-of-harbor-1-7">Announcing the Release of Harbor 1.7!</h2>
 
-<p>We&rsquo;re excited to share that we&rsquo;ll be at KubeCon + CloudNativeCon 2018 in
-Seattle next week!  Since KubeCon at Copenhagen (which many of us went to,
-though not representing any particular CNCF project) we&rsquo;ve been hard at work
-at improving Harbor by working closely with the community to understand their
-needs and wants.</p>
+<p>We’re pleased to announce the release of Harbor 1.7 with lots of under-the-hood
+refinements:</p>
 
-<p>Today Harbor is
-a <a href="https://all.devstats.cncf.io/d/53/projects-health?orgId=1">healthy</a> and
-vibrant incubated project at the CNCF. We&rsquo;ve seen growth in our community and
-superb contributions in the form of issues, code, and project feedback.</p>
+<h3 id="major-features">Major Features</h3>
 
-<p>Our global team is arriving in Seattle over the weekend and is excited to
-engage with users, prospective users, and even those who are just curious
-to learn more about Harbor and what it does. We&rsquo;ll be wearing Harbor t-shirts
-throughout the conference, so if you see one of us please don&rsquo;t be shy and say
-hello!</p>
-
-<p>There are a few scheduled events / places to find us:</p>
+<p>Harbor v1.7 brings to fruition a number of features we’ve been working on over
+the last three months:</p>
 
 <ul>
-<li><strong>Meet the Maintainer Booth</strong> - find us at the CNCF Meet the Maintainer
-Booth on Tuesday from 2:00-3:30pm, Wednesday from 2:00-2:30pm, and Thursday
-from 10:30AM-11:30AM.</li>
-<li><strong>Harbor 101</strong> - Henry Zhou, founder of Harbor, and James Zabala, lead
-maintainer, will be presenting a 101-level presentation that discusses the
-why and hows of Harbor. If you want a 15,000 ft view of the container registry
-project and how it might fit in your organization, this is the presentation
-for you.</li>
-<li><strong>Harbor Deep Dive</strong> - Daniel Jiang and Steven Zou, both senior technical
-architects of the project, will be discussing how things tick under the hood.
-Want to learn about the core service, job service, or how we proxy Docker
-<code>push</code> and <code>pull</code> requests to ensure RBAC and vulnerability scan results are
-within policy? This is the session for you.</li>
-<li><strong>VMware Booth</strong> - Daniel Jiang, senior technical lead, will be at the
-VMware booth on Tuesday at 2:00pm.</li>
+<li>Image Build History – you can now see the contents of a container image</li>
+<li>Image retagging – the ability to apply a new tag to an image after it has been pushed to Harbor. This is particularly useful in cases where images are being promoted in a CI pipeline to production or when images need to be retagged programmatically, or when a user desires to retag container images to different repositories or projects</li>
+<li>Online garbage collection – Harbor can now clean up deleted images from the backend storage and no longer requires the Harbor stack to be stopped before performing a GC operation. This is tremendous news for those who leverage Harbor in environments with CI pipeline resulting in large image churn</li>
+<li>Support Logger customization – enables the user to customize STDOUT / STDERR / file / DB logger of running jobs</li>
+<li>Polished Helm chart functionality – continuing to polish our Helm chart support and fixing various small bugs around this feature, including:
+
+<ul>
+<li>Chart searching included in the global search results</li>
+<li>Label support in Helm charts</li>
+<li>Recursive deletion of charts</li>
+</ul></li>
 </ul>
 
-<p>We couldn&rsquo;t be more excited to join the community at this fun event and
-finally meet many of you in person. On a personal level, these events are
-really what make open source special: meeting those with whom you work on
-GitHub and Slack every day and discussing how to improve things moving
-forward IRL.</p>
+<h3 id="additional-features">Additional Features</h3>
 
-<p>By the way, mention this blog post and grab a free Harbor t-shirt at any one
-of the events listed above!</p>
+<p>We’re always on the lookout for ways to polish the project and we’ve made some
+smaller changes in that vein: Tightened container capabilities – minimizing
+capabilities when starting containers (principle of least privilege!)</p>
+
+<ul>
+<li>Bumped Clair version – Harbor now ships with Clair v2.0.7</li>
+<li>Bumped Notary veresion – Harbor now ships with Notary v0.6.1</li>
+<li>Miscellaneous – support for longer usernames, refactoring our UI code, enabling markdown support in our project description, etc. are all small polish-like changes to the project, but the little things <em>do</em> matter :)</li>
+</ul>
+
+<p>We’ve seen a tremendous increase in participation by our community since
+becoming a Cloud Native Computing Foundation <a href="https://www.cncf.io/projects/">incubated
+project</a>. A special thanks to a number of users
+who&rsquo;ve spent time working on Harbor and contributing to the project:</p>
+
+<ul>
+<li><a href="https://twitter.com/brettjohnson008">Brett Johnson</a></li>
+<li><a href="https://github.com/ChristianWitts">Christian Witts</a></li>
+<li><a href="Colstuwjx">Jacky Wu</a></li>
+<li><a href="https://github.com/kofj">Frank Kung</a></li>
+<li><a href="https://github.com/jeffweilee">Jeff Lee Wei Che</a></li>
+<li><a href="https://twitter.com/gnomeontherun">Jeremy Wilken</a></li>
+<li><a href="https://github.com/rikatz">Ricardo Katz</a></li>
+<li><a href="https://twitter.com/shaneutt">Shane Utt</a></li>
+<li><a href="https://github.com/sheeprine">Stéphane Albert</a></li>
+<li><a href="https://github.com/erks">Touch Ungboriboonpisal</a></li>
+<li><a href="https://github.com/arkadiyk">Arkadiy Kraportov</a></li>
+<li><a href="https://github.com/kyrogue">Chin Zhiqiang</a></li>
+<li><a href="https://github.com/mmpei">mmpei</a></li>
+<li><a href="https://github.com/silenceshell">silenceshell</a></li>
+</ul>
+
+<h2 id="join-the-fun">Join the Fun</h2>
+
+<p>Many thanks to the community for your continued support! We love contributions
+of any kind, including tweaking the documentation, helping others in our
+#harbor <a href="https://cncf.slack.io/">Slack channel</a>, adding docs, tests or even
+performing code reviews. You can find details on joining us
+<a href="https://goharbor.io/community/">here</a>.</p>
 
 
             
