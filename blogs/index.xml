@@ -2,51 +2,72 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blogs on Harbor</title>
-    <link>https://goharbor.github.io/blogs/</link>
+    <link>https://goharbor.io/blogs/</link>
     <description>Recent content in Blogs on Harbor</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 06 Dec 2018 12:00:00 +0400</lastBuildDate>
+    <lastBuildDate>Mon, 04 Mar 2019 12:00:00 +0400</lastBuildDate>
     
-	<atom:link href="https://goharbor.github.io/blogs/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://goharbor.io/blogs/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Welcome new Harbor maintainers!</title>
+      <link>https://goharbor.io/blogs/welcome-new-maintainers-march-2019/</link>
+      <pubDate>Mon, 04 Mar 2019 12:00:00 +0400</pubDate>
+      
+      <guid>https://goharbor.io/blogs/welcome-new-maintainers-march-2019/</guid>
+      <description>Welcome new Harbor maintainers! Today we are announcing the addition of two new maintainers for the Harbor project. We are grateful for their contributions and are looking forward to a long and impactful involvement.
+Frank (FanJian) Kong kofj is an engineer at Qihoo 360, a well-known internet security company. Frank is in charge of operating and maintaining the company’s internal container registry platform which is built on top of Harbor.</description>
+    </item>
+    
+    <item>
+      <title>Harbor v1.7: hot off the press!</title>
+      <link>https://goharbor.io/blogs/harbor-1.7.0-release/</link>
+      <pubDate>Wed, 19 Dec 2018 12:00:00 +0400</pubDate>
+      
+      <guid>https://goharbor.io/blogs/harbor-1.7.0-release/</guid>
+      <description>Announcing the Release of Harbor 1.7! We’re pleased to announce the release of Harbor 1.7 with lots of under-the-hood refinements:
+Major Features Harbor v1.7 brings to fruition a number of features we’ve been working on over the last three months:
+ Image Build History – you can now see the contents of a container image Image retagging – the ability to apply a new tag to an image after it has been pushed to Harbor.</description>
+    </item>
+    
+    <item>
       <title>Harbor at KubeCon &#43; CloudNativeCon 2018 in Seattle</title>
-      <link>https://goharbor.github.io/blogs/harbor-at-kubecon-seattle-2018/</link>
+      <link>https://goharbor.io/blogs/harbor-at-kubecon-seattle-2018/</link>
       <pubDate>Thu, 06 Dec 2018 12:00:00 +0400</pubDate>
       
-      <guid>https://goharbor.github.io/blogs/harbor-at-kubecon-seattle-2018/</guid>
+      <guid>https://goharbor.io/blogs/harbor-at-kubecon-seattle-2018/</guid>
       <description>Harbor Team is Heading to KubeCon! We&amp;rsquo;re excited to share that we&amp;rsquo;ll be at KubeCon + CloudNativeCon 2018 in Seattle next week! Since KubeCon at Copenhagen (which many of us went to, though not representing any particular CNCF project) we&amp;rsquo;ve been hard at work at improving Harbor by working closely with the community to understand their needs and wants.
 Today Harbor is a healthy and vibrant incubated project at the CNCF.</description>
     </item>
     
     <item>
       <title>Harbor Moves to Incubation</title>
-      <link>https://goharbor.github.io/blogs/harbor-moves-to-incubation/</link>
+      <link>https://goharbor.io/blogs/harbor-moves-to-incubation/</link>
       <pubDate>Tue, 13 Nov 2018 20:15:00 +0400</pubDate>
       
-      <guid>https://goharbor.github.io/blogs/harbor-moves-to-incubation/</guid>
+      <guid>https://goharbor.io/blogs/harbor-moves-to-incubation/</guid>
       <description>Harbor Moves to the CNCF Incubator We are thrilled to announce the promotion of Harbor from the Cloud Native Sandbox to Incubating status as a CNCF project. Harbor is an open source cloud native registry project that stores, signs, and scans content. This milestone reflects Harbor’s significant achievements in the areas of community involvement, governance, feature enhancements and adoption.
 Over the last several months Harbor maintainers have been working closely with the community to improve everything from processes to codebase.</description>
     </item>
     
     <item>
       <title>Contributing to Harbor 101</title>
-      <link>https://goharbor.github.io/blogs/contributing/</link>
+      <link>https://goharbor.io/blogs/contributing/</link>
       <pubDate>Thu, 04 Oct 2018 12:00:00 +0400</pubDate>
       
-      <guid>https://goharbor.github.io/blogs/contributing/</guid>
+      <guid>https://goharbor.io/blogs/contributing/</guid>
       <description>We&amp;rsquo;re elated at the increased community involvement since the donation of Harbor to the Cloud Native Computing Foundation. There&amp;rsquo;s lots of interest around the project, including a steady buzz of activity in our Slack channels and on GitHub.
 This blog post is for those interested in contributing to a CNCF project that may not have much experience with the various steps involved. We&amp;rsquo;re a friendly bunch of developer and the best part of our work on Harbor is interacting with the community!</description>
     </item>
     
     <item>
       <title>Harbor version 1.6.0 is live!</title>
-      <link>https://goharbor.github.io/blogs/harbor-1.6.0-release/</link>
+      <link>https://goharbor.io/blogs/harbor-1.6.0-release/</link>
       <pubDate>Thu, 13 Sep 2018 12:00:00 +0400</pubDate>
       
-      <guid>https://goharbor.github.io/blogs/harbor-1.6.0-release/</guid>
+      <guid>https://goharbor.io/blogs/harbor-1.6.0-release/</guid>
       <description>Project Harbor has released version 1.6.0 with several new features such as Helm charts management, improved LDAP support, image replication, and database migrations. A big thank you to the community for your incredible continued support!
 Let&amp;rsquo;s dive into it what&amp;rsquo;s new:
 Helm charts management Helm has become the de facto package manager of Kubernetes, making it easy to to deploy a vast array of applications. We see a dedicated Helm chart repository as a must-have system to help build new enterprise IT infrastructure and platforms.</description>
@@ -54,20 +75,20 @@ Helm charts management Helm has become the de facto package manager of Kubernete
     
     <item>
       <title>Harbor Joins CNCF</title>
-      <link>https://goharbor.github.io/blogs/harbor-joins-cncf/</link>
+      <link>https://goharbor.io/blogs/harbor-joins-cncf/</link>
       <pubDate>Tue, 31 Jul 2018 12:00:00 +0400</pubDate>
       
-      <guid>https://goharbor.github.io/blogs/harbor-joins-cncf/</guid>
+      <guid>https://goharbor.io/blogs/harbor-joins-cncf/</guid>
       <description>Harbor Joins the CNCF Today we are thrilled to announce that Harbor has become an official top-level CNCF project, joining the ranks of other widely-used cloud native projects like Rook, SPIFFE, Spire, Open Policy Agent, CloudEvents and Telepresence. Harbor will enter the CNCF as a sandbox project as we continue to add features and functionality desired by our community.
 Harbor would simply not be where it is today if it wasn’t for our community’s engagement through issues, pull requests, discussions, code, documentation, and many other contributions.</description>
     </item>
     
     <item>
       <title>Hello world!</title>
-      <link>https://goharbor.github.io/blogs/hello-world/</link>
+      <link>https://goharbor.io/blogs/hello-world/</link>
       <pubDate>Thu, 12 Jul 2018 12:11:15 +0400</pubDate>
       
-      <guid>https://goharbor.github.io/blogs/hello-world/</guid>
+      <guid>https://goharbor.io/blogs/hello-world/</guid>
       <description>Hello world! We&amp;rsquo;ve been hard at work on our new Harbor site, and we&amp;rsquo;re thrilled to finally open it up to the world!
 For those unfamiliar with Harbor, it is an open source cloud native registry with a focus on storing, scanning and securing content. Born out of a need for such a project at VMware, the registry&amp;rsquo;s roadmap and feature velocity is influenced by our community of users and developers.</description>
     </item>

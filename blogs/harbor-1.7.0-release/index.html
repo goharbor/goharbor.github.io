@@ -17,7 +17,7 @@
 <link rel="stylesheet" href="/css/style.7dbdd0d47026f574c3e71a48f5e840962a96e917a85a87135a898d9668b65c26.css" integrity="">
   </head><body
     
-      class='page---tags'
+      class='page---blogs--harbor-1.7.0-release'
     
   >
 
@@ -85,213 +85,218 @@
     
     
 
-    <section class="module first module--hero-list has-curve-- bg-violet">
+    <section class="module first module--blogpost-hero">
 
     <div class="container wrap">
-        <h1 class="page-title">Tags</h1>
+        <h1 class="page-title">Harbor v1.7: hot off the press!</h1>
         
+
+  <div class="article-info">
+    <div class="list-date">Wednesday, Dec 19, 2018</div>
+    <div class="list-author">
+      
+      <span class="list-author-name">
+        Harbor Team
+      </span>
+      
+      
+    </div>
+    
+    <h3  class="blogpost-excerpt">A fit, finish and polish release just in time for the holidays</h3>
+    
+  </div>
+
+
 
     </div>
 
-</section>
+</section><section class="module module-content module--blogpost
+        
+            enabled-recent-posts
+        
+    ">
+        <div class="container wrap">
+            
 
-    <section class="module module--latest-posts">
-        <div class="container">
-            <h2 class="module-title">Our Latest Posts</h2>
-            <div class="list-items">
+<h2 id="announcing-the-release-of-harbor-1-7">Announcing the Release of Harbor 1.7!</h2>
+
+<p>We’re pleased to announce the release of Harbor 1.7 with lots of under-the-hood
+refinements:</p>
+
+<h3 id="major-features">Major Features</h3>
+
+<p>Harbor v1.7 brings to fruition a number of features we’ve been working on over
+the last three months:</p>
+
+<ul>
+<li>Image Build History – you can now see the contents of a container image</li>
+<li>Image retagging – the ability to apply a new tag to an image after it has been pushed to Harbor. This is particularly useful in cases where images are being promoted in a CI pipeline to production or when images need to be retagged programmatically, or when a user desires to retag container images to different repositories or projects</li>
+<li>Online garbage collection – Harbor can now clean up deleted images from the backend storage and no longer requires the Harbor stack to be stopped before performing a GC operation. This is tremendous news for those who leverage Harbor in environments with CI pipeline resulting in large image churn</li>
+<li>Support Logger customization – enables the user to customize STDOUT / STDERR / file / DB logger of running jobs</li>
+<li>Polished Helm chart functionality – continuing to polish our Helm chart support and fixing various small bugs around this feature, including:
+
+<ul>
+<li>Chart searching included in the global search results</li>
+<li>Label support in Helm charts</li>
+<li>Recursive deletion of charts</li>
+</ul></li>
+</ul>
+
+<h3 id="additional-features">Additional Features</h3>
+
+<p>We’re always on the lookout for ways to polish the project and we’ve made some
+smaller changes in that vein: Tightened container capabilities – minimizing
+capabilities when starting containers (principle of least privilege!)</p>
+
+<ul>
+<li>Bumped Clair version – Harbor now ships with Clair v2.0.7</li>
+<li>Bumped Notary version – Harbor now ships with Notary v0.6.1</li>
+<li>Miscellaneous – support for longer usernames, refactoring our UI code, enabling markdown support in our project description, etc. are all small polish-like changes to the project, but the little things <em>do</em> matter :)</li>
+</ul>
+
+<p>We’ve seen a tremendous increase in participation by our community since
+becoming a Cloud Native Computing Foundation <a href="https://www.cncf.io/projects/">incubated
+project</a>. A special thanks to a number of users
+who&rsquo;ve spent time working on Harbor and contributing to the project:</p>
+
+<ul>
+<li><a href="https://twitter.com/brettjohnson008">Brett Johnson</a></li>
+<li><a href="https://github.com/ChristianWitts">Christian Witts</a></li>
+<li><a href="Colstuwjx">Jacky Wu</a></li>
+<li><a href="https://github.com/kofj">Frank Kung</a></li>
+<li><a href="https://github.com/jeffweilee">Jeff Lee Wei Che</a></li>
+<li><a href="https://twitter.com/gnomeontherun">Jeremy Wilken</a></li>
+<li><a href="https://github.com/rikatz">Ricardo Katz</a></li>
+<li><a href="https://twitter.com/shaneutt">Shane Utt</a></li>
+<li><a href="https://github.com/sheeprine">Stéphane Albert</a></li>
+<li><a href="https://github.com/erks">Touch Ungboriboonpisal</a></li>
+<li><a href="https://github.com/arkadiyk">Arkadiy Kraportov</a></li>
+<li><a href="https://github.com/kyrogue">Chin Zhiqiang</a></li>
+<li><a href="https://github.com/mmpei">mmpei</a></li>
+<li><a href="https://github.com/silenceshell">silenceshell</a></li>
+</ul>
+
+<h2 id="join-the-fun">Join the Fun</h2>
+
+<p>Many thanks to the community for your continued support! We love contributions
+of any kind, including tweaking the documentation, helping others in our
+#harbor <a href="https://cncf.slack.io/">Slack channel</a>, adding docs, tests or even
+performing code reviews. You can find details on joining us
+<a href="https://goharbor.io/community/">here</a>.</p>
+
+
+            
                 
-            </div>
+                <aside class="recent-posts">
+                    <h3 class="module-title">Recent Articles</h3>
+                    <ul class="items">
+                        
+                            
+                            
+
+                        
+                            
+                            
+                                <li class="item"><a href="https://goharbor.io/blogs/welcome-new-maintainers-march-2019/">Welcome new Harbor maintainers!</a></li>
+                            
+
+                        
+                            
+                            
+                                <li class="item"><a href="https://goharbor.io/blogs/harbor-1.7.0-release/">Harbor v1.7: hot off the press!</a></li>
+                            
+
+                        
+                            
+                            
+                                <li class="item"><a href="https://goharbor.io/blogs/harbor-at-kubecon-seattle-2018/">Harbor at KubeCon &#43; CloudNativeCon 2018 in Seattle</a></li>
+                            
+
+                        
+                            
+                            
+                                <li class="item"><a href="https://goharbor.io/blogs/harbor-moves-to-incubation/">Harbor Moves to Incubation</a></li>
+                            
+
+                        
+                    </ul>
+                </aside>
+            
+
         </div>
     </section>
 
-    <section class="module module--community-articles">
+    
+
+<section class="module module--community-articles">
     <div class="container">
-        <h2 class="module-title">Articles from the Community</h2>
+
+        <h2 class="module-title">Related articles from the Community</h2>
+
         <div class="list-items">
+
+        
+        
+
+        
+        
             
             
-            <div class='list-item icon-default'>
-                <div class="list-title">
-                    <a href="https://blogs.vmware.com/cloudnative/2018/06/14/harbor-delivers-a-trusted-cloud-native-registry/" target="_blank" ><h3>Harbor Delivers a Trusted Cloud Native Registry</h3></a>
-                </div>
-                <div class="list-article-info">
-                    Patrick Daigle
-                    </small>
-                </div>
+            
+        
+            
+            
+        
+            
+            
+            
+        
+            
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
 
 
-                
-
+        
+            
+            <div class="not-found">
+                <p>
+                    No matching community articles found at this time.
+                </p>
             </div>
-            
-            
-            <div class='list-item icon-default'>
-                <div class="list-title">
-                    <a href="https://blogs.vmware.com/cloudnative/2017/07/19/project-harbor-makes-an-entry-into-rancher/" target="_blank" ><h3>Project Harbor makes an entry into Rancher!</h3></a>
-                </div>
-                <div class="list-article-info">
-                    Massimo Re Ferrè
-                    </small>
-                </div>
-
-
-                
-
-            </div>
-            
-            
-            <div class='list-item icon-default'>
-                <div class="list-title">
-                    <a href="http://www.think-foundry.com/the-inspiration-behind-open-source-project-harbor/" target="_blank" ><h3>The Inspiration Behind Open Source Project Harbor</h3></a>
-                </div>
-                <div class="list-article-info">
-                    Henry Zhang
-                    </small>
-                </div>
-
-
-                
-
-            </div>
-            
-            
-            <div class='list-item icon-default'>
-                <div class="list-title">
-                    <a href="http://www.think-foundry.com/harbor-private-registry-image-vulnerability-scanning-demo/" target="_blank" ><h3>Harbor Private Registry: Image Vulnerability Scanning Demo</h3></a>
-                </div>
-                <div class="list-article-info">
-                    Henry Zhang
-                    </small>
-                </div>
-
-
-                
-
-            </div>
-            
-            
-            <div class='list-item icon-default'>
-                <div class="list-title">
-                    <a href="http://www.vmtocloud.com/remote-site-replicated-docker-registries-with-vmware-harbor/" target="_blank" ><h3>Remote site replicated Docker Registries with VMware Harbor</h3></a>
-                </div>
-                <div class="list-article-info">
-                    Ryan Kelly
-                    </small>
-                </div>
-
-
-                
-
-            </div>
-            
-            
-            <div class='list-item icon-default'>
-                <div class="list-title">
-                    <a href="http://www.vmtocloud.com/hybrid-cloud-docker-registry-with-vmware-harbor/" target="_blank" ><h3>Hybrid cloud Docker Registry with VMware Harbor</h3></a>
-                </div>
-                <div class="list-article-info">
-                    Ryan Kelly
-                    </small>
-                </div>
-
-
-                
-
-            </div>
-            
-            
-            <div class='list-item icon-default'>
-                <div class="list-title">
-                    <a href="http://www.vmtocloud.com/harbor-registry-blueprint-is-here/" target="_blank" ><h3>Harbor Registry Blueprint for vRA</h3></a>
-                </div>
-                <div class="list-article-info">
-                    Ryan Kelly
-                    </small>
-                </div>
-
-
-                
-
-            </div>
-            
-            
-            <div class='list-item icon-default'>
-                <div class="list-title">
-                    <a href="http://www.think-foundry.com/architecture-of-harbor-an-open-source-enterprise-class-registry-server/" target="_blank" ><h3>Architecture of Harbor: An Open Source Enterprise-class Registry Server</h3></a>
-                </div>
-                <div class="list-article-info">
-                    Henry Zhang
-                    </small>
-                </div>
-
-
-                
-
-            </div>
-            
-            
-            <div class='list-item icon-default'>
-                <div class="list-title">
-                    <a href="http://www.think-foundry.com/private-docker-registry-harbor-achieves-ha-based-on-virtual-san/" target="_blank" ><h3>Private Harbor Registry Achieves High Availability based on Virtual SAN</h3></a>
-                </div>
-                <div class="list-article-info">
-                    Henry Zhang
-                    </small>
-                </div>
-
-
-                
-
-            </div>
-            
-            
-            <div class='list-item icon-default'>
-                <div class="list-title">
-                    <a href="http://www.think-foundry.com/working-with-harbor-registry-rest-api-via-swagger/" target="_blank" ><h3>Working with Harbor Registry REST API via Swagger</h3></a>
-                </div>
-                <div class="list-article-info">
-                    Henry Zhang
-                    </small>
-                </div>
-
-
-                
-
-            </div>
-            
-            
-            <div class='list-item icon-default'>
-                <div class="list-title">
-                    <a href="https://blog.minio.io/how-to-use-vmware-harbor-with-minio-c07a5c4ae31b" target="_blank" ><h3>How to use Harbor with Minio</h3></a>
-                </div>
-                <div class="list-article-info">
-                    Harshavardhana
-                    </small>
-                </div>
-
-
-                
-
-            </div>
-            
-            
-            <div class='list-item icon-default'>
-                <div class="list-title">
-                    <a href="https://vorcunus.blog/2017/03/11/harbor-an-enterprise-class-registry-server/" target="_blank" ><h3>Harbor, an enterprise class registry server</h3></a>
-                </div>
-                <div class="list-article-info">
-                    Ozan Orçunus
-                    </small>
-                </div>
-
-
-                
-
-            </div>
-            
+        
         </div>
+
     </div>
 </section>
+
 
 
 
