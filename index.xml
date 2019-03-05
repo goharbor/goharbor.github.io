@@ -6,10 +6,20 @@
     <description>Recent content on Harbor</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 19 Dec 2018 12:00:00 +0400</lastBuildDate>
+    <lastBuildDate>Mon, 04 Mar 2019 12:00:00 +0400</lastBuildDate>
     
 	<atom:link href="https://goharbor.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Welcome new Harbor maintainers!</title>
+      <link>https://goharbor.io/blogs/welcome-new-maintainers-march-2019/</link>
+      <pubDate>Mon, 04 Mar 2019 12:00:00 +0400</pubDate>
+      
+      <guid>https://goharbor.io/blogs/welcome-new-maintainers-march-2019/</guid>
+      <description>Welcome new Harbor maintainers! Today we are announcing the addition of two new maintainers for the Harbor project. We are grateful for their contributions and are looking forward to a long and impactful involvement.
+Frank (FanJian) Kong kofj is an engineer at Qihoo 360, a well-known internet security company. Frank is in charge of operating and maintaining the company’s internal container registry platform which is built on top of Harbor.</description>
+    </item>
     
     <item>
       <title>Harbor v1.7: hot off the press!</title>
